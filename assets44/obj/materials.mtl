@@ -1,0 +1,60 @@
+newmtl purple
+Kd 0.5529 0.2706 0.7451
+
+newmtl lightpurple
+Kd 0.7294 0.4706 0.9020
+
+newmtl belly
+Kd 1.0000 0.8118 0.3961
+
+newmtl wing
+Kd 0.9647 0.5922 0.2078
+
+newmtl horn
+Kd 1.0000 0.8784 0.6275
+
+newmtl eye
+Kd 1.0000 0.9765 0.8667
+
+newmtl pupil
+Kd 0.1882 0.0941 0.2431
+
+newmtl green
+Kd 0.4392 0.5922 0.3333
+
+newmtl darkgreen
+Kd 0.2588 0.4235 0.2863
+
+newmtl armor
+Kd 0.4863 0.5294 0.6235
+
+newmtl metal
+Kd 0.7373 0.7882 0.8078
+
+newmtl brown
+Kd 0.5686 0.3765 0.2667
+
+newmtl red
+Kd 0.7882 0.3020 0.2941
+
+newmtl blue
+Kd 0.2902 0.5373 0.8235
+
+newmtl cyan
+Kd 0.6118 0.9373 1.0000
+
+newmtl gold
+Kd 1.0000 0.8588 0.2980
+
+newmtl stone
+Kd 0.5490 0.5686 0.6471
+
+newmtl leaf
+Kd 0.2667 0.5490 0.3412
+
+newmtl wood
+Kd 0.4627 0.3137 0.2196
+
+newmtl ice
+Kd 0.5098 0.8471 0.9294
+
