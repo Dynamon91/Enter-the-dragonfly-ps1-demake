@@ -1,0 +1,15 @@
+test_actual_capture_and_reload (test_m33.M33.test_actual_capture_and_reload) ... ok
+test_campaign_registry (test_m33.M33.test_campaign_registry) ... ok
+test_disc (test_m33.M33.test_disc) ... ok
+test_fire_and_unloaded_guard (test_m33.M33.test_fire_and_unloaded_guard) ... ok
+test_ledger_limits_and_reset (test_m33.M33.test_ledger_limits_and_reset) ... ok
+test_scripted_placements_reserved (test_m33.M33.test_scripted_placements_reserved) ... ok
+test_all_orders_and_modes (test_m34.M34.test_all_orders_and_modes) ... ok
+test_disc_and_native (test_m34.M34.test_disc_and_native) ... ok
+test_range_and_reset (test_m34.M34.test_range_and_reset) ... ok
+test_source_mapping (test_m34.M34.test_source_mapping) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 8.143s
+
+OK

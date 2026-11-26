@@ -1,0 +1,284 @@
+{
+  "quests": [
+    {
+      "name": "Tootie",
+      "conversation_record": 259,
+      "motion_record": 77,
+      "conversation_sha256": "43702b7d92eec49891c93c8d16286fd973246f082e6e3f1dbb35b594f86c7a6e",
+      "motion_sha256": "04868043c58b02c74576f4ef1fcf0bf729fbffe0edb54dd92ff6fae0dc37ed8f",
+      "flags": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "duration_seconds": 6.0,
+      "duration_ticks": 180,
+      "npc": {
+        "name": "__CNODEDD_TOOTIE",
+        "edf": "DD_TOOTIE.edf",
+        "source_xyz": [
+          15031.8017578125,
+          17.37561798095703,
+          11918.31640625
+        ],
+        "record_offset": 1187856,
+        "kind": 4,
+        "value": 0
+      },
+      "prop": {
+        "name": "__CNODEDD_TOOTIE_DFLY",
+        "edf": "DD_TOOTIE_DFLY.edf",
+        "source_xyz": [
+          15827.259765625,
+          485.74359130859375,
+          11746.5
+        ],
+        "record_offset": 1185349,
+        "kind": 4,
+        "value": 0
+      },
+      "trigger": {
+        "name": "__CNODEDD_TOOTIE_DFLY_TRIGGER",
+        "edf": "DD_TOOTIE_DFLY_TRIGGER.edf",
+        "source_xyz": [
+          15746.6123046875,
+          485.74359130859375,
+          12014.0625
+        ],
+        "record_offset": 1244511,
+        "kind": 4,
+        "value": 0
+      },
+      "spline": "TOOTIE_DFLYSPLINEShape",
+      "spline_offset": 115403,
+      "control_points": [
+        [
+          15746.6123046875,
+          485.74359130859375,
+          12014.0625
+        ],
+        [
+          15360.5546875,
+          746.041748046875,
+          11915.6904296875
+        ],
+        [
+          15272.3212890625,
+          575.2743530273438,
+          11825.0185546875
+        ],
+        [
+          15160.2998046875,
+          431.7214050292969,
+          11886.0361328125
+        ],
+        [
+          15074.19140625,
+          309.9678039550781,
+          11922.646484375
+        ],
+        [
+          15030.099609375,
+          141.53564453125,
+          11969.4267578125
+        ],
+        [
+          15031.8017578125,
+          17.37561798095703,
+          11918.31640625
+        ]
+      ]
+    },
+    {
+      "name": "Huey",
+      "conversation_record": 982,
+      "motion_record": 1195,
+      "conversation_sha256": "40efc55fda95f431f7fa109297e8b4ba7ce2509f96145a08a7838b122d1880b3",
+      "motion_sha256": "56cc340141a7e49e9d1a93ae8c5870067356023a70a4acd70a2fb3dadd4c6370",
+      "flags": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "duration_seconds": 4.5,
+      "duration_ticks": 135,
+      "npc": {
+        "name": "__CNODEDD_HUEY",
+        "edf": "DD_HUEY.edf",
+        "source_xyz": [
+          -21405.599609375,
+          -398.82611083984375,
+          8019.966796875
+        ],
+        "record_offset": 1132680,
+        "kind": 4,
+        "value": 0
+      },
+      "prop": {
+        "name": "__CNODEDD_KITE",
+        "edf": "DD_HUEY_KITE.edf",
+        "source_xyz": [
+          -21695.927734375,
+          87.96807861328125,
+          8464.302734375
+        ],
+        "record_offset": 1128783,
+        "kind": 4,
+        "value": 0
+      },
+      "trigger": {
+        "name": "__CNODEDD_KITE_TRIGGER",
+        "edf": "DD_HUEY_KITE_TRIGGER.edf",
+        "source_xyz": [
+          -21439.310546875,
+          87.96807861328125,
+          8627.1123046875
+        ],
+        "record_offset": 1244865,
+        "kind": 4,
+        "value": 0
+      },
+      "spline": "KITE_SPLINEShape",
+      "spline_offset": 82294,
+      "control_points": [
+        [
+          -21695.927734375,
+          87.96807861328125,
+          8464.302734375
+        ],
+        [
+          -21631.7265625,
+          168.527587890625,
+          8334.6279296875
+        ],
+        [
+          -21571.818359375,
+          94.43413543701172,
+          8161.99560546875
+        ],
+        [
+          -21691.935546875,
+          -93.59712219238281,
+          8033.49853515625
+        ],
+        [
+          -21595.888671875,
+          -150.663818359375,
+          8047.15576171875
+        ],
+        [
+          -21424.9453125,
+          -240.88380432128906,
+          8014.0615234375
+        ],
+        [
+          -21405.59765625,
+          -354.8766174316406,
+          8019.96728515625
+        ]
+      ]
+    },
+    {
+      "name": "Dooie",
+      "conversation_record": 271,
+      "motion_record": 409,
+      "conversation_sha256": "96262db09faa2b7169faec1d8351399d10ce5eaadf182f70f72d250a57d42019",
+      "motion_sha256": "35ec0dbf18e88019ce66d809cf925608eec50f0c147e2c95aab6ee57e77ae2ca",
+      "flags": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "duration_seconds": 6.25,
+      "duration_ticks": 188,
+      "npc": {
+        "name": "__CNODEDD_DOOIE",
+        "edf": "DD_DOOIE.edf",
+        "source_xyz": [
+          -513.7031860351562,
+          1730.333740234375,
+          -17952.173828125
+        ],
+        "record_offset": 1091647,
+        "kind": 4,
+        "value": 0
+      },
+      "prop": {
+        "name": "__CNODEDD_BOOK",
+        "edf": "DD_DOOIE_RIPTOC_DECODER.edf",
+        "source_xyz": [
+          48.276466369628906,
+          2217.354736328125,
+          -17388.66015625
+        ],
+        "record_offset": 1091954,
+        "kind": 4,
+        "value": 0
+      },
+      "trigger": {
+        "name": "__CNODEDD_BOOK_TRIGGER",
+        "edf": "DD_DOOIE_RIPTOC_DECODER_TRIGGER.edf",
+        "source_xyz": [
+          -84.73504638671875,
+          2217.35498046875,
+          -17563.650390625
+        ],
+        "record_offset": 1245203,
+        "kind": 4,
+        "value": 0
+      },
+      "spline": "BOOK_SPLINEShape",
+      "spline_offset": 42194,
+      "control_points": [
+        [
+          48.276466369628906,
+          2217.354736328125,
+          -17388.66015625
+        ],
+        [
+          -132.88851928710938,
+          2289.1826171875,
+          -17304.115234375
+        ],
+        [
+          -338.5655822753906,
+          2358.7353515625,
+          -17365.453125
+        ],
+        [
+          -495.2049560546875,
+          2300.482666015625,
+          -17526.69921875
+        ],
+        [
+          -569.2275390625,
+          2171.191650390625,
+          -17675.78515625
+        ],
+        [
+          -557.4805297851562,
+          2011.3558349609375,
+          -17792.416015625
+        ],
+        [
+          -538.0888061523438,
+          1833.5906982421875,
+          -17896.01171875
+        ],
+        [
+          -513.7031860351562,
+          1730.333740234375,
+          -17952.173828125
+        ]
+      ]
+    }
+  ],
+  "source_reward_flag": 204,
+  "reward_slot": 3,
+  "source_edf_record": 734,
+  "source_spline_record": 569,
+  "limitations": "Source script flags and timings recovered; linear control-point traversal, manual L2 interaction, diagnostic markers and ledger slot mapping are adaptations. No original NPC/prop render or dialogue yet."
+}

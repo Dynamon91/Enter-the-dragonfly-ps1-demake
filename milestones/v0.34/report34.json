@@ -1,0 +1,7 @@
+{
+  "exe_bytes": 462848,
+  "linked_ram_from_load": 1728848,
+  "headroom_to_stack_region": 171696,
+  "boot_bank_bytes": 157152,
+  "mode": "Native compilation; source-derived three-recovery quest; diagnostic markers"
+}
