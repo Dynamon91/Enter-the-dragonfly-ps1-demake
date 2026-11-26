@@ -1,0 +1,4 @@
+/* 320x240 independent bitmap subtitle panel; no extra VRAM allocation. */
+static void glyph36(int x,int y,int c,u32 color){if(c<32||c>126)return;const U8*g=qfont36[c-32];for(int j=0;j<10;j++){int i=0;while(i<6){if(!(g[j]&(1<<(5-i)))){i++;continue;}int start=i;while(i<6&&(g[j]&(1<<(5-i))))i++;rect(x+start,y+j,i-start,1,color);}}}
+static void text36(int x,int y,const char*s,u32 color){int xx=x;for(;*s;s++){if(*s=='\n'){xx=x;y+=10;}else{glyph36(xx,y,*s,color);xx+=6;}}}
+static void huddialog36(void){if(!dialog_active36(&dialog36))return;static const int names[3]={429,419,425};rect(5,159,310,76,0x201c28);rect(5,159,310,2,0x9b73d4);rect(5,233,310,2,0x9b73d4);text36(12,163,qtext36(names[dialog36.actor]),0x72d8ff);text36(12,176,qtext36(dialog_id36(&dialog36)),0xffffff);text36(250,163,"L2 / X",0xcac0e0);}

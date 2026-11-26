@@ -1,0 +1,26 @@
+test_all_source_clips (test_m36.M36.test_all_source_clips) ... ok
+test_conversations (test_m36.M36.test_conversations) ... ok
+test_disc_and_native (test_m36.M36.test_disc_and_native) ... ok
+test_native_wiring (test_m36.M36.test_native_wiring) ... ok
+test_pose_deltas (test_m36.M36.test_pose_deltas) ... ok
+test_source_text (test_m36.M36.test_source_text) ... ok
+test_bank (test_m35.M35.test_bank) ... ok
+test_disc (test_m35.M35.test_disc) ... ok
+test_runtime_wiring (test_m35.M35.test_runtime_wiring) ... ok
+test_source_mapping (test_m35.M35.test_source_mapping) ... ok
+test_vram (test_m35.M35.test_vram) ... ok
+test_all_orders_and_modes (test_m34.M34.test_all_orders_and_modes) ... ok
+test_disc_and_native (test_m34.M34.test_disc_and_native) ... ok
+test_range_and_reset (test_m34.M34.test_range_and_reset) ... ok
+test_source_mapping (test_m34.M34.test_source_mapping) ... ok
+test_actual_capture_and_reload (test_m33.M33.test_actual_capture_and_reload) ... ok
+test_campaign_registry (test_m33.M33.test_campaign_registry) ... ok
+test_disc (test_m33.M33.test_disc) ... ok
+test_fire_and_unloaded_guard (test_m33.M33.test_fire_and_unloaded_guard) ... ok
+test_ledger_limits_and_reset (test_m33.M33.test_ledger_limits_and_reset) ... ok
+test_scripted_placements_reserved (test_m33.M33.test_scripted_placements_reserved) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 16.289s
+
+OK

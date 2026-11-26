@@ -1,0 +1,224 @@
+{
+  "models": [
+    {
+      "model": 0,
+      "metadata": 97,
+      "joints": 30,
+      "vertices": 512,
+      "clips": [
+        {
+          "name": "bdgn_damage_c",
+          "record": 1001,
+          "sha256": "11a3945b2335e840d9d127625ed5a30e9db464e0649c02c12cfe12592507ddaf",
+          "keys": 626,
+          "duration": 2.3333332538604736,
+          "curves": 104
+        },
+        {
+          "name": "bdgn_talk_c",
+          "record": 158,
+          "sha256": "8bd5424b6a0190c891af134542b6d308817cc67f028b6d3c0f066c819bbfd57c",
+          "keys": 634,
+          "duration": 2.0,
+          "curves": 104
+        },
+        {
+          "name": "bdgn_recognize_c",
+          "record": 481,
+          "sha256": "713bcfe442eb6c260d2fc00821270108caecc78ee8ae9ebf888666ad62b12052",
+          "keys": 594,
+          "duration": 1.6666666269302368,
+          "curves": 104
+        },
+        {
+          "name": "bdgn_walk_c",
+          "record": 1062,
+          "sha256": "c3c2ca74ac50b712a751998cb79d92242f5ea0af5523a5743290a5ba4030f9a7",
+          "keys": 419,
+          "duration": 0.800000011920929,
+          "curves": 104
+        },
+        {
+          "name": "bdgn_bored_c",
+          "record": 376,
+          "sha256": "a27638cb6eeb2888830aa6c1e50f66be388c48c0b3e16bfa5b5a65387ac6926e",
+          "keys": 483,
+          "duration": 3.3333332538604736,
+          "curves": 104
+        },
+        {
+          "name": "bdgn_idle_c",
+          "record": 1087,
+          "sha256": "4839db23d3b7fcf4e1804337bfbeb2a7fab51562ead08de96f1a958ddde2a7bd",
+          "keys": 530,
+          "duration": 2.0,
+          "curves": 104
+        }
+      ],
+      "ranges": [
+        {
+          "name": "bdgn_idle_c",
+          "start": 0,
+          "frames": 6,
+          "duration": 2.0,
+          "ticks": 60
+        },
+        {
+          "name": "bdgn_talk_c",
+          "start": 6,
+          "frames": 6,
+          "duration": 2.0,
+          "ticks": 60
+        }
+      ],
+      "max_delta": 43
+    },
+    {
+      "model": 1,
+      "metadata": 553,
+      "joints": 30,
+      "vertices": 507,
+      "clips": [
+        {
+          "name": "bdgn_damage_b",
+          "record": 629,
+          "sha256": "3fc1ce2930129c7d46f0f91df84bed5cdb38a15ccbb46bff391d5cade391b4cd",
+          "keys": 630,
+          "duration": 2.3333332538604736,
+          "curves": 106
+        },
+        {
+          "name": "bdgn_talk_b",
+          "record": 154,
+          "sha256": "cfdb18053ea85cc602de8aca3ae91a17bf496f93317cc285f6b2718e6241d78a",
+          "keys": 627,
+          "duration": 2.0,
+          "curves": 106
+        },
+        {
+          "name": "bdgn_recognize_b",
+          "record": 480,
+          "sha256": "1acf09aed8a073e59b4bf9c644843c9a6ef59e22b036a4da6a9b78fa39cc422f",
+          "keys": 598,
+          "duration": 1.6666666269302368,
+          "curves": 106
+        },
+        {
+          "name": "bdgn_walk_b",
+          "record": 1150,
+          "sha256": "4f0847a3cf9c668645b2d6fd4862a4156e9aa64649f9d6d55e0583b5e1654cad",
+          "keys": 423,
+          "duration": 0.800000011920929,
+          "curves": 106
+        },
+        {
+          "name": "bdgn_bored_b",
+          "record": 597,
+          "sha256": "1c60078ea8995fd795a6b8ca1d07c28b00b9d291ae37c9741e92f9098f515841",
+          "keys": 912,
+          "duration": 7.666666507720947,
+          "curves": 106
+        },
+        {
+          "name": "bdgn_idle_b",
+          "record": 914,
+          "sha256": "38de35c4d6b5b4ac94b2d68fba071f7aa1777a085dfbe1f820f9a6415a749ca0",
+          "keys": 534,
+          "duration": 2.0,
+          "curves": 106
+        }
+      ],
+      "ranges": [
+        {
+          "name": "bdgn_idle_b",
+          "start": 0,
+          "frames": 6,
+          "duration": 2.0,
+          "ticks": 60
+        },
+        {
+          "name": "bdgn_talk_b",
+          "start": 6,
+          "frames": 6,
+          "duration": 2.0,
+          "ticks": 60
+        }
+      ],
+      "max_delta": 43
+    },
+    {
+      "model": 2,
+      "metadata": 1022,
+      "joints": 30,
+      "vertices": 513,
+      "clips": [
+        {
+          "name": "bdgn_damage_a",
+          "record": 1158,
+          "sha256": "d2f0430106c22ee31c4bacacb30499b21a53d5fa2241efc3007c92affdedf48b",
+          "keys": 640,
+          "duration": 2.3333332538604736,
+          "curves": 107
+        },
+        {
+          "name": "bdgn_talk_a",
+          "record": 663,
+          "sha256": "14357dff855b364337163084f792d89b4328cc4b2df01083bb75021914da0aaf",
+          "keys": 641,
+          "duration": 2.0,
+          "curves": 107
+        },
+        {
+          "name": "bdgn_recognize_a",
+          "record": 78,
+          "sha256": "516bbb5ba900799e76dc825f01bd729a79f9ae9cf30ce40a6d0fd71eed101253",
+          "keys": 608,
+          "duration": 1.6666666269302368,
+          "curves": 107
+        },
+        {
+          "name": "bdgn_walk_a",
+          "record": 1226,
+          "sha256": "8f377303a28839b43d5648389e9672eab8cf0e7ab16e201ca6de3c41602b4ce3",
+          "keys": 431,
+          "duration": 0.800000011920929,
+          "curves": 107
+        },
+        {
+          "name": "bdgn_bored_a",
+          "record": 406,
+          "sha256": "6a3cbb5db5d6b35c125822970d1bc7e26a8ef185b5b0b4702b8673e46defa491",
+          "keys": 946,
+          "duration": 5.333333492279053,
+          "curves": 107
+        },
+        {
+          "name": "bdgn_idle_a",
+          "record": 341,
+          "sha256": "4a7af9ce0102043641cfe29c41c388c40576b3b7a56d2891934f19cb97e14a5a",
+          "keys": 548,
+          "duration": 2.0,
+          "curves": 107
+        }
+      ],
+      "ranges": [
+        {
+          "name": "bdgn_idle_a",
+          "start": 0,
+          "frames": 6,
+          "duration": 2.0,
+          "ticks": 60
+        },
+        {
+          "name": "bdgn_talk_a",
+          "start": 6,
+          "frames": 6,
+          "duration": 2.0,
+          "ticks": 60
+        }
+      ],
+      "max_delta": 43
+    }
+  ],
+  "limitations": "Source curves, provisional Euler and linear interpolation, root translation suppressed, facial objects rigid to head; kite animations not integrated."
+}

@@ -1,0 +1,8 @@
+{
+  "exe_bytes": 587776,
+  "linked_ram_from_load": 1866352,
+  "headroom_to_stack_region": 34192,
+  "boot_bank_bytes": 157152,
+  "quest_bank_bytes": 50688,
+  "mode": "Native compilation; original NPC idle/talk sample playback and English dialogue"
+}

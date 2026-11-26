@@ -1,0 +1,142 @@
+{
+  "source_container": "SPYRODAT/CHUNKS2/TITLE.CNK",
+  "source_record": 83,
+  "source_sha256": "be6b98146c6fe1fbecf77a5051422589acf2bd3e51d810d2ae42be6cf67a906a",
+  "actors": [
+    {
+      "script_record": 259,
+      "script_sha256": "43702b7d92eec49891c93c8d16286fd973246f082e6e3f1dbb35b594f86c7a6e",
+      "name_id": 429,
+      "name": "Rusty",
+      "line_ids": [
+        430,
+        431,
+        432,
+        467,
+        468,
+        468
+      ]
+    },
+    {
+      "script_record": 982,
+      "script_sha256": "40efc55fda95f431f7fa109297e8b4ba7ce2509f96145a08a7838b122d1880b3",
+      "name_id": 419,
+      "name": "RJ",
+      "line_ids": [
+        420,
+        421,
+        428,
+        423,
+        422,
+        422
+      ]
+    },
+    {
+      "script_record": 271,
+      "script_sha256": "96262db09faa2b7169faec1d8351399d10ce5eaadf182f70f72d250a57d42019",
+      "name_id": 425,
+      "name": "Dougy",
+      "line_ids": [
+        426,
+        427,
+        422,
+        0,
+        466,
+        465
+      ]
+    }
+  ],
+  "lines": {
+    "418": {
+      "voice": 10418,
+      "characters": 106,
+      "rows": 3
+    },
+    "419": {
+      "voice": 0,
+      "characters": 2,
+      "rows": 1
+    },
+    "420": {
+      "voice": 10420,
+      "characters": 135,
+      "rows": 3
+    },
+    "421": {
+      "voice": 10421,
+      "characters": 135,
+      "rows": 3
+    },
+    "422": {
+      "voice": 10422,
+      "characters": 70,
+      "rows": 2
+    },
+    "423": {
+      "voice": 10423,
+      "characters": 103,
+      "rows": 3
+    },
+    "425": {
+      "voice": 0,
+      "characters": 5,
+      "rows": 1
+    },
+    "426": {
+      "voice": 10426,
+      "characters": 178,
+      "rows": 4
+    },
+    "427": {
+      "voice": 10427,
+      "characters": 77,
+      "rows": 2
+    },
+    "428": {
+      "voice": 10428,
+      "characters": 77,
+      "rows": 2
+    },
+    "429": {
+      "voice": 0,
+      "characters": 5,
+      "rows": 1
+    },
+    "430": {
+      "voice": 10430,
+      "characters": 40,
+      "rows": 1
+    },
+    "431": {
+      "voice": 10431,
+      "characters": 121,
+      "rows": 3
+    },
+    "432": {
+      "voice": 10432,
+      "characters": 39,
+      "rows": 1
+    },
+    "465": {
+      "voice": 10465,
+      "characters": 106,
+      "rows": 3
+    },
+    "466": {
+      "voice": 10466,
+      "characters": 53,
+      "rows": 2
+    },
+    "467": {
+      "voice": 10467,
+      "characters": 85,
+      "rows": 2
+    },
+    "468": {
+      "voice": 10468,
+      "characters": 204,
+      "rows": 5
+    }
+  },
+  "limitations": "Title English text; LANG_SEL copy differs in punctuation. Dialogue state presentation reconstructed; source flag 4 999 shortcut and exact cameras/voice not implemented."
+}
