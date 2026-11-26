@@ -1,0 +1,292 @@
+{
+  "schema": 1,
+  "description": "Design registry, not a claim that cancelled levels or encounters were recovered. Original ordering and expansion names are provisional.",
+  "classic_dragonfly_slots": 90,
+  "expanded_dragonfly_slots": 120,
+  "levels": [
+    {
+      "id": 0,
+      "name": "Dragon Realms",
+      "kind": "homeworld",
+      "mode": "both",
+      "status": "hub prototype on separate executable"
+    },
+    {
+      "id": 1,
+      "name": "Dragonfly Dojo",
+      "kind": "adventure",
+      "mode": "both",
+      "status": "capture prototype",
+      "provenance": "released level"
+    },
+    {
+      "id": 2,
+      "name": "Crop Circle Country",
+      "kind": "adventure",
+      "mode": "both",
+      "status": "not integrated",
+      "provenance": "released level"
+    },
+    {
+      "id": 3,
+      "name": "Luau Island",
+      "kind": "adventure",
+      "mode": "both",
+      "status": "not integrated",
+      "provenance": "released level"
+    },
+    {
+      "id": 4,
+      "name": "Cloud 9",
+      "kind": "adventure",
+      "mode": "both",
+      "status": "not integrated",
+      "provenance": "released level"
+    },
+    {
+      "id": 5,
+      "name": "Monkey Monastery",
+      "kind": "adventure",
+      "mode": "both",
+      "status": "not integrated",
+      "provenance": "released level"
+    },
+    {
+      "id": 6,
+      "name": "Honey Marsh",
+      "kind": "adventure",
+      "mode": "both",
+      "status": "not integrated",
+      "provenance": "released level"
+    },
+    {
+      "id": 7,
+      "name": "Thieves Den",
+      "kind": "adventure",
+      "mode": "both",
+      "status": "not integrated",
+      "provenance": "released level"
+    },
+    {
+      "id": 8,
+      "name": "Jurassic Jungle",
+      "kind": "adventure",
+      "mode": "both",
+      "status": "not integrated",
+      "provenance": "released level"
+    },
+    {
+      "id": 9,
+      "name": "Emerald / Enchanted Forest",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "documented cancelled concept"
+    },
+    {
+      "id": 10,
+      "name": "Baked Alaska",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "reported cancelled resource reference"
+    },
+    {
+      "id": 11,
+      "name": "Cutthroat's Cove",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "reported cancelled resource reference"
+    },
+    {
+      "id": 12,
+      "name": "Briarwood Village",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 13,
+      "name": "Lantern Grotto",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 14,
+      "name": "Moonlit Canopy",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 15,
+      "name": "Crystal Orchard",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 16,
+      "name": "Frostbite Pass",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 17,
+      "name": "Glacier Foundry",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 18,
+      "name": "Avalanche Abbey",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 19,
+      "name": "Sunken Observatory",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 20,
+      "name": "Stormbreak Coast",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 21,
+      "name": "Corsair Caverns",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 22,
+      "name": "Gnorc Ironworks",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 23,
+      "name": "Clockwork Citadel",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 24,
+      "name": "Thunder Quarry",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 25,
+      "name": "Obsidian Ramparts",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 26,
+      "name": "Twin Tyrants Keep",
+      "kind": "adventure",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 27,
+      "name": "Enchanted Realms",
+      "kind": "homeworld",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 28,
+      "name": "Forgotten Realms",
+      "kind": "homeworld",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    },
+    {
+      "id": 29,
+      "name": "Gnorc Kingdom",
+      "kind": "homeworld",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "new fan design"
+    }
+  ],
+  "bosses": [
+    {
+      "id": 0,
+      "name": "Crush",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "proposed new encounter"
+    },
+    {
+      "id": 1,
+      "name": "Gulp",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "proposed new encounter"
+    },
+    {
+      "id": 2,
+      "name": "Ripto",
+      "mode": "both",
+      "status": "planned",
+      "provenance": "released boss; original battle not yet integrated"
+    },
+    {
+      "id": 3,
+      "name": "Gnasty Gnorc",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "proposed new encounter"
+    },
+    {
+      "id": 4,
+      "name": "Ripto and Gnasty",
+      "mode": "expanded",
+      "status": "planned",
+      "provenance": "proposed new encounter"
+    }
+  ],
+  "active_capture_ids": [
+    0,
+    1
+  ],
+  "reserved_scripted_ids": [
+    2,
+    3
+  ]
+}

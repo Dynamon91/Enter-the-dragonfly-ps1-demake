@@ -1,33 +1,33 @@
-# Spyro: Enter the Dragonfly — PS1 demake
+# Spyro: Enter the Dragonfly — PS1 demake / expanded vision
 
 **Work in progress — experimental native PlayStation prototype.**
 
-![Engineering estimate: 66%](https://img.shields.io/badge/engineering%20estimate-66%25-blue)
+![Shared engine estimate: 67%](https://img.shields.io/badge/shared%20engine%20estimate-67%25-blue)
 
-Unofficial fan development project targeting the original PlayStation (MIPS R3000A, GTE, 2 MiB main RAM, 1 MiB VRAM, 512 KiB SPU RAM). The goal is to reconstruct the adventure using a native fixed-point engine and locally converted assets.
+Unofficial fan development project targeting the original PlayStation (MIPS R3000A, GTE, 2 MiB main RAM, 1 MiB VRAM, 512 KiB SPU RAM). Classic Mode aims to reconstruct the released adventure; Expanded Mode aims to explore the originally ambitious vision with separately labeled new designs.
 
-## Current milestone: v0.32 — Boot asset streaming and RAM optimization
+## v0.33 — Bubble breath and dragonfly capture
 
-![v0.32 development preview](docs/screenshots/v0.32.png)
+![v0.33 host development preview](docs/screenshots/v0.33.png)
 
-*Source-derived model/animation preview carried forward from v0.31; no graphical changes in this revision. Not an emulator screenshot.*
+*Source-derived model render and actual host test traces, not an emulator screenshot.*
 
-- 152.8 KiB net linked RAM recovered by moving seven initialization-only GPU/SPU payloads to a CRC-validated CD boot bank.
-- 195.3 KiB available before the reserved stack, compared with 42.5 KiB in v0.31.
-- All seven payloads preserved byte-for-byte; no new geometry, texture or animation cuts.
-- Native MIPS-I compilation, six new host tests and 18 distinct inherited tests passed.
-- Dragon Realms and Dragonfly Dojo terrain/texture streaming, collectible objects, skybox, animated Ninja Riptoc encounters and combat carried forward.
+- Two source-positioned Dojo dragonflies capturable via reconstructed bubble breath; two scripted placements reserved.
+- Original shared body and wing poses, provisional red-orange palette binding.
+- Persistent session capture ledger, 90 Classic and 120 Expanded slots; 26 adventure levels, 4 homeworlds and 5 boss encounters in the [proposed campaign registry](campaign33.json).
+- Native MIPS-I compilation, six new host tests and 24 distinct inherited tests passed.
+- Linked RAM 1,723,600 bytes; 176,944 bytes before reserved stack.
 
-The percentage is an engineering estimate, not the percentage of playable original content. Emulator boot, real hardware operation, performance and complete adventure progression remain unverified.
+Triangle selects fire/bubble; Circle breathes; R2+Start toggles the mode and resets the diagnostic session. Both modes currently share the Dojo prototype. Expanded content and boss battles are not implemented. The percentage is a shared-engine estimate, not playable campaign completion. Emulator boot and real hardware operation remain unverified.
 
 ## Source checkpoint
 
-See [v0.32 technical notes](milestones/v0.32/TECHNICAL.md), [memory report](milestones/v0.32/report32.json), [archive manifest](milestones/v0.32/ARCHIVES.md) and [historical milestones](milestones/history). Previous [v0.31 notes](milestones/v0.31/TECHNICAL.md) remain available.
+See [v0.33 technical notes](milestones/v0.33/TECHNICAL.md), [memory report](milestones/v0.33/report33.json), [archive checksums](milestones/v0.33/ARCHIVES.md), [host capture trace](milestones/v0.33/capture_trace.json) and [historical milestones](milestones/history). The [v0.32 notes](milestones/v0.32/TECHNICAL.md) describe boot-bank optimization.
 
-This is a source archive, **not yet a standalone buildable checkout**. Generated asset banks, intermediate builds, executables and disc images remain separate; the original PS2 ISO and extracted proprietary assets are not committed. Build from the full local workspace with the matching converted assets.
+This is a source archive, **not a standalone buildable checkout**. Generated asset banks, intermediate builds, executables and disc images remain separate. Build with the locally converted assets; the original PS2 ISO and extracted proprietary asset banks are not committed.
 
 ## Next work
 
-Dragonfly capture, bubble breath, NPCs, portal transitions, additional levels and emulator verification.
+Scripted captures, NPCs, portal transitions, additional breaths and the released Ripto fight. Then build separate expanded content packs for cancelled-level concepts and new fan-designed levels and boss encounters. No claim that the planned expansion reproduces undocumented original designs.
 
 Spyro and Enter the Dragonfly belong to their respective rights holders. This independent project is not affiliated with them.

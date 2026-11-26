@@ -1,0 +1,7 @@
+{
+  "exe_bytes": 458752,
+  "linked_ram_from_load": 1723600,
+  "headroom_to_stack_region": 176944,
+  "boot_bank_bytes": 157152,
+  "mode": "Native compilation; bubble capture prototype; Classic/Expanded session ledger"
+}

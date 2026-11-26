@@ -1,0 +1,15 @@
+# Spyro: Enter the Dragonfly PSX demake — milestone 0.33
+
+First bubble-breath and dragonfly capture implementation, based on v0.32. Classic and Expanded session ledgers support 90 and 120 IDs, respectively. The campaign registry (`campaign33.json`) lists 26 adventure levels, 4 homeworlds and 5 boss encounters for the expanded vision. Only the two existing region prototypes are integrated; proposed levels and bosses are not playable. Names and ordering of new fan-designed content are provisional; the cancelled-level labels are reported concepts, not newly recovered geometry or scripts.
+
+## Native implementation
+- Two enabled original Dojo placement IDs, two scripted IDs reserved and separate trigger excluded. The model uses a shared source mesh from geometry record 328, identical in records 590, 926 and 1153. 590 body triangles and 34 triangles per wing pose, source red-orange palette centroid colors (metadata record 717); exact variant materials, wing attachment, facial animation and original movement/event scripts are unresolved.
+- Bubble projectile life, bounded pool, cooldown, ground path checks, capture ledger and pickup sound. Both enabled positions successfully captured in 4 host updates from staged positions 250 units away. Each capture persists when its sector reloads. No original AI or wall collision fidelity claim; static horizontal flight with vertical bob, no chase logic yet.
+- Triangle switches between fire and bubble; Circle breath, Square charge, Cross jump/glide, L1/R1 camera. Start resets session. R2+Start switches the session mode and resets progress. HUD count and mode/breath color indicators are diagnostic. The modes currently share the same playable Dojo; no portal menu, progression gates or memory-card saves yet.
+- Native linked allocation 1,723,600 bytes, 176,944 bytes before reserved stack. Boot bank and Dojo sectors unchanged. No additional texture VRAM. 6 new tests, 24 distinct inherited tests (37 total invocations due to imported classes), all passed. Native hardware and emulator boot remain unverified.
+
+## Build
+`python tools/dragonfly33.py /path/to/source.iso` (optional with existing converted data), `python tools/build_m33.py`, `PYTHONPATH=tools:tests python -m unittest test_m29 test_m30 test_m31 test_m32 test_m33 -v`, `python tools/preview_m33.py`. Open `build_m33/play/ETD_PSX_M33.cue` in an emulator. ETD_BOOT.EXE is retained as a fallback. Original PS2 ISO not included. Public source checkout needs the locally converted assets. Test disc has no original PlayStation security data; physical boot requires an authorized compatible loader.
+
+## Roadmap
+Classic fidelity first, then connect hub and Dojo, implement original scripted captures/NPCs, additional breaths and original Ripto battle, then add the expansion levels and bosses in distinct content packs. Classic and Expanded completion estimates are separate; the previous 66% estimate measured engine engineering, not playable original or expanded content. Current shared engine estimate: 67%; expanded campaign completion not quantified.
