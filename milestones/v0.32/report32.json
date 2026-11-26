@@ -1,0 +1,7 @@
+{
+  "exe_bytes": 436224,
+  "linked_ram_from_load": 1700528,
+  "headroom_to_stack_region": 200016,
+  "boot_bank_bytes": 157152,
+  "mode": "Native compilation; disc-resident startup data; v0.31 AI preserved"
+}

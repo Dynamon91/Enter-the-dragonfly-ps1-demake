@@ -1,0 +1,49 @@
+{
+  "bytes": 157152,
+  "padded": 157696,
+  "crc32": "bbae529e",
+  "arrays": {
+    "upload": {
+      "offset": 0,
+      "bytes": 75336,
+      "crc32": "611fb155",
+      "header": "scene.h"
+    },
+    "fireupload": {
+      "offset": 75336,
+      "bytes": 1560,
+      "crc32": "7edaa259",
+      "header": "firetex11.h"
+    },
+    "sky_pal28": {
+      "offset": 76896,
+      "bytes": 2048,
+      "crc32": "4a83e8f0",
+      "header": "skydata28.h"
+    },
+    "sky_pix28": {
+      "offset": 78944,
+      "bytes": 16384,
+      "crc32": "0178ee5d",
+      "header": "skydata28.h"
+    },
+    "ninja_pal30": {
+      "offset": 95328,
+      "bytes": 1024,
+      "crc32": "b39fa8cd",
+      "header": "ninja30.h"
+    },
+    "ninja_pix30": {
+      "offset": 96352,
+      "bytes": 8192,
+      "crc32": "75e39f89",
+      "header": "ninja30.h"
+    },
+    "sfx_bank": {
+      "offset": 104544,
+      "bytes": 52608,
+      "crc32": "eed28490",
+      "header": "sfx14.h"
+    }
+  }
+}
