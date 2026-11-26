@@ -8,3 +8,14 @@ run(*opts,'-O2','-ffreestanding','-fno-builtin','-fno-stack-protector','-I','src
 run('ld.lld','-m','elf32ltsmip','-T','native/arena40.ld',str(O/'start.o'),str(O/'arena.o'),'-o',str(O/'arena.elf'))
 run('llvm-objcopy','-O','binary',str(O/'arena.elf'),str(O/'arena.bin'))
 d=(O/'arena.bin').read_bytes();d+=bytes((-len(d))%2048);h=bytearray(2048);h[:8]=b'PS-X EXE';struct.pack_into('<IIII',h,16,0x80010000,0,0x80010000,len(d));struct.pack_into('<II',h,0x30,0x801fff00,0);(O/'ETD40.EXE').write_bytes(h+d);print('Native PS-X EXE bytes:',len(h+d))
+from disc16 import iso,raw
+s=iso(h+d,{})
+image=b''.join(raw(i,x) for i,x in enumerate(s))
+(O/'ETD40.bin').write_bytes(image)
+(O/'ETD40.cue').write_text('FILE "ETD40.bin" BINARY\n  TRACK 01 MODE2/2352\n    INDEX 01 00:00:00\n')
+assert image[16*2352+24:16*2352+31]==b'\x01CD001\x01'
+assert b'ETD_SECT.EXE;1' in s[21]
+assert b''.join(s[22:22+len(h+d)//2048])==h+d
+for i in range(len(s)):
+ sector=image[i*2352:(i+1)*2352];assert sector==raw(i,sector[24:2072])
+print('Mode 2 Form 1 sectors verified:',len(s))
