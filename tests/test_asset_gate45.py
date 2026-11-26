@@ -32,6 +32,9 @@ class GateTest(unittest.TestCase):
         for a in self.m['assets']:
             if a['scope']=='expanded': a['status']='missing'
         self.assertFalse(self.check('classic'));self.assertTrue(self.check())
+    def test_malformed_fields(self):
+        self.m['assets'][0]['kind']=[]; self.assertTrue(self.check())
+        self.m['assets'][0]['kind']='scene'; self.m['assets'][0]['source']={}; self.assertTrue(self.check())
     def test_bad_hash(self):
         self.m['assets'][0]['output_sha256']='0'*64;self.assertTrue(self.check())
     def test_bad_path(self):
