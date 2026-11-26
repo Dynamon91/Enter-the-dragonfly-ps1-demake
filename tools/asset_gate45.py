@@ -89,7 +89,7 @@ def audit(manifest, root, mode):
         if not isinstance(key, str) or not key or key in seen:
             fail('missing or duplicate id'); continue
         seen.add(key)
-        if kind not in REVIEWS or scope not in ('released', 'expanded'):
+        if not isinstance(kind, str) or kind not in REVIEWS or scope not in ('released', 'expanded'):
             fail('unknown kind or scope'); continue
         if key in expected and expected[key] != (kind, scope):
             fail('kind/scope differs from required inventory'); continue
@@ -98,7 +98,7 @@ def audit(manifest, root, mode):
             fail('not verified; unavailable for release'); continue
         source = a.get('source')
         allowed = RELEASED if scope == 'released' else EXPANDED
-        if source not in allowed or (kind == 'music' and source not in MUSIC):
+        if not isinstance(source, str) or source not in allowed or (kind == 'music' and source not in MUSIC):
             fail('source violates restoration policy'); continue
         if not isinstance(a.get('source_ref'), str) or not a['source_ref'].strip():
             fail('missing source resource/disc or composition reference')
