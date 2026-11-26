@@ -15,4 +15,4 @@ The complete archive contains the earlier milestones, source, conversion tools, 
 
 Verify locally using `sha256sum <filename>`.
 
-This public repository preserves selected source and documentation, not a redistributable game disc or a complete buildable checkout.
+This public repository preserves the source checkpoint and documentation, not a redistributable game disc or a complete buildable checkout.

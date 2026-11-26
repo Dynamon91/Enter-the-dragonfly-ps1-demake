@@ -8,6 +8,10 @@ This unofficial fan development project targets the original PlayStation (MIPS R
 
 ## Current milestone: v0.31 — Animated Ninja Riptoc combat
 
+![v0.31 source-derived development preview](docs/screenshots/v0.31.png)
+
+*Software-rendered diagnostic of recovered model and animation poses; not an emulator screenshot.*
+
 - Dragon Realms and Dragonfly Dojo terrain and texture streaming.
 - Source-positioned gems, baskets and Ninja Riptocs.
 - Original sky environment and sampled character animations.
@@ -17,9 +21,11 @@ This unofficial fan development project targets the original PlayStation (MIPS R
 
 The percentage is an engineering estimate, not the percentage of playable original content. Emulator boot, real hardware operation, performance and complete adventure progression remain unverified.
 
-## Repository status
+## Source checkpoint
 
-This initial checkpoint records selected project source and milestone documentation. It is **not yet a complete buildable checkout**. The full v0.31 development ZIP and BIN/CUE test disc are retained separately; see [archive manifest](milestones/v0.31/ARCHIVES.md) for their SHA-256 checksums. Original PS2 disc images and extracted proprietary game assets are not committed.
+This repository preserves 232 files from the development workspace, including native engine source, conversion and build tools, host regression tests and latest integration source. The historical development notes are in [milestones/history](milestones/history), and [v0.31 technical notes](milestones/v0.31/TECHNICAL.md) document the latest behavior and build workflow.
+
+This is a source archive, **not yet a complete standalone buildable checkout**. Generated asset banks, intermediate builds, PS1 executables and disc images are retained separately. See the [archive manifest](milestones/v0.31/ARCHIVES.md) for exact SHA-256 checksums. The original PS2 ISO and extracted proprietary game assets are not committed.
 
 ## Next work
 
