@@ -1,0 +1,8 @@
+{
+  "exe_bytes": 512000,
+  "linked_ram_from_load": 1798352,
+  "headroom_to_stack_region": 102192,
+  "boot_bank_bytes": 157152,
+  "quest_bank_bytes": 50688,
+  "mode": "Native compilation; lossless grouped animation compression"
+}

@@ -1,0 +1,30 @@
+{
+  "rig_frames": 245,
+  "rig_words": 516,
+  "checkpoint_stride": 8,
+  "rig_old_bytes": 189465,
+  "rig_new_bytes": 140460,
+  "npc_poses": 36,
+  "npcs": [
+    {
+      "model": 0,
+      "values": 18432,
+      "old_bytes": 18432,
+      "new_bytes": 8309
+    },
+    {
+      "model": 1,
+      "values": 18252,
+      "old_bytes": 18252,
+      "new_bytes": 8287
+    },
+    {
+      "model": 2,
+      "values": 18468,
+      "old_bytes": 18468,
+      "new_bytes": 8453
+    }
+  ],
+  "npc_cache_bytes": 9234,
+  "rig_cache_unchanged": true
+}
