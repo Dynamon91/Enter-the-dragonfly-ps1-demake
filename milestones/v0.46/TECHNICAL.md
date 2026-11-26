@@ -1,0 +1,19 @@
+# v0.46 — original soundtrack XA conversion
+
+This is an audio conversion milestone, not a new gameplay executable. The authentic v0.37 adventure is the primary restoration baseline; v0.44 remains a separate diagnostic. The original PS2 disc, source-derived v0.37 banks, and authentic unused recordings remain unavailable. No original or custom songs are included, and no soundtrack assignments were changed. Only generated stereo test tones were used.
+
+`tools/xa46.py` converts local 16-bit PCM stereo WAV at 37,800 Hz into 4-bit XA ADPCM Mode 2 Form 2 raw sectors (2352 bytes). It uses four predictor filters, quantization error search, correct nibble interleave, duplicated headers, 18 sound groups per audio sector, 2016 stereo frames/sector, Form 2 EDC, and 1:8 physical interleave at nominal 2x CD speed. Other sectors are empty Form 1 data sectors. First blocks of tracks and loops use predictor zero to avoid dependence on prior predictor history. It does not resample or change source loop points: only sector-aligned loops are accepted; nonaligned original loops require a separate, reviewed conversion strategy. Terminal padding is explicitly recorded. Loop metadata is not gapless playback: the CD seek/controller and output interpolation behavior still require real testing.
+
+`tools/xabank46.py` packs up to 8 streams into the same physical sector range, validates source SHA-256 and routing, preserves compressed sample data, and recalculates sector addresses/subheader EDC. The emitted JSON maps each track to file/channel, first/last audio LBA and loop endpoints. It is a raw bank, not an ISO filesystem or CD driver. Packing two 2-/3-sector test streams reduced physical sectors from 40 to 24 (40%). Similar-length tracks should be grouped to minimize empty slots; full CD capacity and concurrent scene reads must be measured before final packaging.
+
+## Reproduction (Python 3.11+)
+
+    python -m unittest discover -s tests -p 'test_*46.py' -v
+    python tools/xa46.py input.wav track.bin --lba 0 --loop 0 40320 > track.json
+    python tools/xabank46.py bank.bin --track track.bin track.json --lba 0 > bank.json
+
+The sample loop numbers above are illustrative (must match actual input). No automatic resampling, mono conversion, clipping normalization or loop rounding. For input that is not already stereo 37800 Hz PCM, retain the source master and use a reviewed resampling step; verify original tempo, loop mapping and channel arrangement. Do not use this encoder to replace existing tracks. On generated 40,320-frame and 24,192-frame stereo fixtures, FFmpeg's PSX STR demuxer decoded both packed channels independently at 37,800 Hz with correct sample counts; RMSE 15.983 and 18.097 PCM units respectively. FFmpeg logs `Invalid parameters 0 0 0` for the deliberately empty Form 1 filler sectors, so the test is not a claim of clean real hardware streaming. Audio-only extraction for one track decodes without this warning. 15 new synthetic tests and 16 inherited intake tests passed. Encoder rejects silent or truncated input and checks corruption, loop alignment, routing and existing output protection (ordinary single-process use). No PS1 hardware/emulator playback tests were performed.
+
+Next: recover original asset banks; inspect original audio containers and track/loop mapping; convert actual tracks; integrate native CD-XA channel filter, read/seek and loop controller with scene transitions; measure audio stalls and disc capacity; encode short original voice/SFX to SPU ADPCM. Use original soundtrack and verified unused music first; create original compositions only for missing expanded content. Do not declare a new adventure build or zero errors until verified.
+
+Format reference: https://psx-spx.consoledev.net/dev/ps1/cdr/cdromformat/ (CD-ROM XA Audio ADPCM Compression).
