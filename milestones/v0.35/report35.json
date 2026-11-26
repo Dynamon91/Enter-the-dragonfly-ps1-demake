@@ -1,0 +1,8 @@
+{
+  "exe_bytes": 528384,
+  "linked_ram_from_load": 1805088,
+  "headroom_to_stack_region": 95456,
+  "boot_bank_bytes": 157152,
+  "quest_bank_bytes": 50688,
+  "mode": "Native compilation; original quest actor meshes and bind poses"
+}

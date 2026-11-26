@@ -1,0 +1,2 @@
+/* Separate verified texture bank; the previous executable still uses BOOT32.DAT. */
+static int quest_load35(U8*dst,U32 cap,U32 lba,U32 size,Read18 read,void*ctx){if(!dst||!read||size!=Q35_BYTES||cap<Q35_PAD||lba>=449850u||Q35_PAD/2048u>449850u-lba)return 0;for(U32 off=0;off<Q35_PAD/2048u;){U32 n=Q35_PAD/2048u-off;if(n>32)n=32;if(!read(ctx,lba+off,n,dst+off*2048u))return 0;off+=n;}return bootcrc32(dst,Q35_BYTES)==Q35_CRC;}

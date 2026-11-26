@@ -1,0 +1,336 @@
+{
+  "models": [
+    {
+      "name": "Tootie",
+      "resource": "baby_dragon_c.mrb",
+      "metadata": 97,
+      "geometry": 353,
+      "metadata_sha256": "15e3aa7552676805efc019156ab9c5bdf37c526fff2e47732902913fe30ec15d",
+      "geometry_sha256": "05c54ebc0948e50e20bb9c0b687ec494e0f9fa56b62d9cab2cb5031120ee65f9",
+      "vertices": 512,
+      "triangles": 954,
+      "source_triangles": 1144,
+      "parts": [
+        {
+          "name": "bdgn_eyeball_rShape",
+          "source": 60,
+          "optimized": 60,
+          "texture_group": 91
+        },
+        {
+          "name": "bdgn_eyeball_lShape",
+          "source": 60,
+          "optimized": 60,
+          "texture_group": 91
+        },
+        {
+          "name": "bdgn_wingsShape",
+          "source": 16,
+          "optimized": 16,
+          "texture_group": 44
+        },
+        {
+          "name": "bdgn_mainShape",
+          "source": 1008,
+          "optimized": 818,
+          "texture_group": 313
+        }
+      ],
+      "bounds": [
+        [
+          -40,
+          -95,
+          -87
+        ],
+        [
+          40,
+          0,
+          58
+        ]
+      ]
+    },
+    {
+      "name": "Huey",
+      "resource": "baby_dragon_b.mrb",
+      "metadata": 553,
+      "geometry": 117,
+      "metadata_sha256": "ca952eb9094872b948c3c184dd51e5e7e5d52d0ebe226c4afb3f6fca607badcd",
+      "geometry_sha256": "63e7d19352e9e50e139ba390d19c4426f3a5f705f7e4ae451fc6b90d3d20b339",
+      "vertices": 507,
+      "triangles": 914,
+      "source_triangles": 1110,
+      "parts": [
+        {
+          "name": "bdgn_lash_rShape",
+          "source": 15,
+          "optimized": 9,
+          "texture_group": 248
+        },
+        {
+          "name": "bdgn_eyeball_rShape",
+          "source": 51,
+          "optimized": 49,
+          "texture_group": 239
+        },
+        {
+          "name": "bdgn_lash_lShape",
+          "source": 15,
+          "optimized": 9,
+          "texture_group": 248
+        },
+        {
+          "name": "bdgn_eyeball_lShape",
+          "source": 51,
+          "optimized": 49,
+          "texture_group": 239
+        },
+        {
+          "name": "bdgn_wingsShape",
+          "source": 16,
+          "optimized": 16,
+          "texture_group": 250
+        },
+        {
+          "name": "bdgn_mainShape",
+          "source": 962,
+          "optimized": 782,
+          "texture_group": 248
+        }
+      ],
+      "bounds": [
+        [
+          -40,
+          -106,
+          -87
+        ],
+        [
+          40,
+          0,
+          59
+        ]
+      ]
+    },
+    {
+      "name": "Dooie",
+      "resource": "baby_dragon_a.mrb",
+      "metadata": 1022,
+      "geometry": 105,
+      "metadata_sha256": "ee7789ecee5d7a5ffbd7d848f2509f6cff22a4f73c61d802880a60d7717c8f4a",
+      "geometry_sha256": "1ae8456a96416a5b4a44d7b31c9c0abb681268f644bbd0679942e5c44f1debd6",
+      "vertices": 513,
+      "triangles": 942,
+      "source_triangles": 1132,
+      "parts": [
+        {
+          "name": "bdgn_eyeball_rShape",
+          "source": 31,
+          "optimized": 31,
+          "texture_group": 160
+        },
+        {
+          "name": "bdgn_eyeball_lShape",
+          "source": 31,
+          "optimized": 31,
+          "texture_group": 160
+        },
+        {
+          "name": "bdgn_eyebrow_rShape",
+          "source": 17,
+          "optimized": 17,
+          "texture_group": 216
+        },
+        {
+          "name": "bdgn_eyebrow_lShape",
+          "source": 17,
+          "optimized": 17,
+          "texture_group": 216
+        },
+        {
+          "name": "bdgn_wingsShape",
+          "source": 16,
+          "optimized": 16,
+          "texture_group": 247
+        },
+        {
+          "name": "bdgn_mainShape",
+          "source": 1020,
+          "optimized": 830,
+          "texture_group": 216
+        }
+      ],
+      "bounds": [
+        [
+          -40,
+          -98,
+          -87
+        ],
+        [
+          40,
+          0,
+          62
+        ]
+      ]
+    },
+    {
+      "name": "Kite",
+      "resource": "kite.mrb",
+      "metadata": 419,
+      "geometry": 311,
+      "metadata_sha256": "abf289a2daf0cc06e5b780e5e74ac91f0760ed366efdabe98064d35ba8a5fada",
+      "geometry_sha256": "a45098ca8ee5c67517eebb9de533a3ee905b4055bf1d567f72d5e9de9cc25b9a",
+      "vertices": 472,
+      "triangles": 761,
+      "source_triangles": 1086,
+      "parts": [
+        {
+          "name": "body_hShape",
+          "source": 28,
+          "optimized": 28,
+          "texture_group": 26
+        },
+        {
+          "name": "body_gShape",
+          "source": 28,
+          "optimized": 28,
+          "texture_group": 26
+        },
+        {
+          "name": "body_fShape",
+          "source": 28,
+          "optimized": 28,
+          "texture_group": 26
+        },
+        {
+          "name": "body_eShape",
+          "source": 28,
+          "optimized": 28,
+          "texture_group": 26
+        },
+        {
+          "name": "body_dShape",
+          "source": 28,
+          "optimized": 28,
+          "texture_group": 26
+        },
+        {
+          "name": "body_cShape",
+          "source": 28,
+          "optimized": 28,
+          "texture_group": 26
+        },
+        {
+          "name": "body_bShape",
+          "source": 28,
+          "optimized": 28,
+          "texture_group": 26
+        },
+        {
+          "name": "body_aShape",
+          "source": 28,
+          "optimized": 28,
+          "texture_group": 26
+        },
+        {
+          "name": "kite_headShape",
+          "source": 818,
+          "optimized": 493,
+          "texture_group": 26
+        },
+        {
+          "name": "ribbon_rShape",
+          "source": 16,
+          "optimized": 16,
+          "texture_group": 88
+        },
+        {
+          "name": "ribbon_lShape",
+          "source": 16,
+          "optimized": 16,
+          "texture_group": 88
+        },
+        {
+          "name": "kite_stringShape",
+          "source": 12,
+          "optimized": 12,
+          "texture_group": 26
+        }
+      ],
+      "bounds": [
+        [
+          -48,
+          -508,
+          -521
+        ],
+        [
+          48,
+          2,
+          2
+        ]
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "group": 91,
+      "filename": "F3AF6C3E.PXT"
+    },
+    {
+      "group": 44,
+      "filename": "284C5760.PXT"
+    },
+    {
+      "group": 313,
+      "filename": "3755D4F7.PXT"
+    },
+    {
+      "group": 248,
+      "filename": "EF3E59F5.PXT"
+    },
+    {
+      "group": 239,
+      "filename": "AE482167.PXT"
+    },
+    {
+      "group": 250,
+      "filename": "A1D75EAA.PXT"
+    },
+    {
+      "group": 160,
+      "filename": "9AA60359.PXT"
+    },
+    {
+      "group": 216,
+      "filename": "B2522865.PXT"
+    },
+    {
+      "group": 247,
+      "filename": "FB0AEA54.PXT"
+    },
+    {
+      "group": 26,
+      "filename": "99E5ECE1.PXT"
+    },
+    {
+      "group": 88,
+      "filename": "0F0352D8.PXT"
+    }
+  ],
+  "prop_refs": [
+    {
+      "spline": "TOOTIE_DFLYSPLINEShape",
+      "edf_offset": 50111,
+      "resource": "KITE.MRB"
+    },
+    {
+      "spline": "KITE_SPLINEShape",
+      "edf_offset": 208179,
+      "resource": "KITE.MRB"
+    },
+    {
+      "spline": "BOOK_SPLINEShape",
+      "edf_offset": 69851,
+      "resource": "KITE.MRB"
+    }
+  ],
+  "limitations": "NPC bind pose, head-local eye/eyebrow/lash translation, reconstructed player-facing yaw. Shared KITE.MRB for all three props, rest geometry; exact animation and alpha blending pending. Opaque CLUT conversion, vertex clustering."
+}
