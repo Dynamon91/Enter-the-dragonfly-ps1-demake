@@ -1,0 +1,21 @@
+test_basket_variants (test_m29.M29.test_basket_variants) ... ok
+test_disc (test_m29.M29.test_disc) ... ok
+test_enemy_combat (test_m29.M29.test_enemy_combat) ... ok
+test_gem10 (test_m29.M29.test_gem10) ... ok
+test_ids (test_m29.M29.test_ids) ... ok
+test_model (test_m29.M29.test_model) ... ok
+test_unchanged_geometry (test_m29.M29.test_unchanged_geometry) ... ok
+test_attack_trace (test_m31.M31.test_attack_trace) ... ok
+test_blocked_motion (test_m31.M31.test_blocked_motion) ... ok
+test_death_persistence (test_m31.M31.test_death_persistence) ... ok
+test_disc (test_m31.M31.test_disc) ... ok
+test_source_animation (test_m31.M31.test_source_animation) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 7.451s
+
+OK
+basket coverage 90 /90; variant tests [(1, 14, -15127, -851, -12814, 1), (2, 66, 6978, 0, 12780, 2), (5, 0, -12506, -2000, -17109, 6), (10, 76, 9453, -1801, -3804, 10)]
+enemy floor coverage 25 /25; combat tests [(0, 1, -4244, -3476, -14045), (1, 0, -843, -2500, -7899)]
+10-value gem test score 10
+attack traces: [(0, 1), (1, 0)]

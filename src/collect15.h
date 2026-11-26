@@ -1,0 +1,21 @@
+/* Source gem coordinates and meshes; prototype collection and Sparx following. */
+#include "collectdata12.h"
+typedef struct {unsigned char taken[GEM_COUNT];int score,tick,sx,sy,sz,target,events,direct_events,assist_events;} Collect;
+static void collect_reset(Collect*c,const Player*p){for(int i=0;i<GEM_COUNT;i++)c->taken[i]=0;c->score=c->tick=c->events=c->direct_events=c->assist_events=0;c->target=-1;c->sx=p->x-120;c->sy=p->y-190;c->sz=p->z-45;}
+static int path_to_gem(const Player*p,const s16*g,int radius){int dx=p->x-g[0],dz=p->z-g[2];if(ab(dx)>radius||ab(dz)>radius||ab(p->y-g[1])>125)return 0;if(dx*dx+dz*dz>radius*radius)return 0;int prev=floor_at(p->x,p->z);if(prev==32767||ab(prev-g[1])>110)return 0;for(int k=1;k<=4;k++){int f=floor_at(p->x-dx*k/4,p->z-dz*k/4);if(f==32767||ab(f-prev)>110||ab(f-g[1])>110)return 0;prev=f;}return 1;}
+static void take_gem(Collect*c,int i,int assist){if(c->taken[i])return;c->taken[i]=1;c->score+=gempos[i][3];c->events++;if(assist)c->assist_events++;else c->direct_events++;}
+static void collect_step(Collect*c,const Player*p,int btn,int health){if(btn&PAD_START){collect_reset(c,p);return;}c->events=c->direct_events=c->assist_events=0;c->tick=(c->tick+1)&255;
+ for(int i=0;i<GEM_COUNT;i++)if(!c->taken[i]&&path_to_gem(p,gempos[i],180))take_gem(c,i,0);
+ int best=-1,dmin=361*361;for(int i=0;i<GEM_COUNT;i++)if(health>0&&!c->taken[i]&&path_to_gem(p,gempos[i],360)){int dx=p->x-gempos[i][0],dz=p->z-gempos[i][2],d=dx*dx+dz*dz;if(d<dmin){best=i;dmin=d;}}
+ c->target=best;int sn=sine[p->heading],cs=sine[(p->heading+16)&63];int x=p->x-((cs*135+sn*55)>>12),z=p->z+((sn*135-cs*55)>>12),y=p->y-190+(sine[(c->tick*2)&63]*18>>12);
+ if(best>=0){const s16*g=gempos[best];x=g[0];y=g[1]-36;z=g[2];}
+ if(ab(x-c->sx)>700||ab(z-c->sz)>700||ab(y-c->sy)>700){/* Return to player on teleport, never teleport to treasure. */c->sx=p->x-120;c->sy=p->y-190;c->sz=p->z-45;}else{c->sx+=(x-c->sx)/4;c->sy+=(y-c->sy)/4;c->sz+=(z-c->sz)/4;}
+ if(best>=0&&ab(x-c->sx)<=26&&ab(z-c->sz)<=26&&ab(y-c->sy)<=26){take_gem(c,best,1);c->target=-1;}
+}
+#define NFACE(a) ((int)(sizeof(a)/sizeof((a)[0])))
+static int add_collect(EffectTri*out,const CollectFace*f,int count,int x,int y,int z,int sn,int cs){for(int i=0;i<count;i++){out[i].color=f[i].color;for(int j=0;j<3;j++){int a=f[i].v[j][0],b=f[i].v[j][1],d=f[i].v[j][2];out[i].v[j]=(EffectVertex){x+((cs*a+sn*d)>>12),y+b,z+((cs*d-sn*a)>>12)};}}return count;}
+static int collect_mesh(const Collect*c,const Player*p,EffectTri*out,int health){int n=0,sn=sine[c->tick&63],cs=sine[(c->tick+16)&63];for(int i=0;i<GEM_COUNT;i++){if(c->taken[i])continue;const s16*g=gempos[i];if(ab(p->x-g[0])>3400||ab(p->z-g[2])>3400)continue;const CollectFace*f=gemmesh1;int count=NFACE(gemmesh1);if(g[3]==2){f=gemmesh2;count=NFACE(gemmesh2);}else if(g[3]==5){f=gemmesh5;count=NFACE(gemmesh5);}else if(g[3]==25){f=gemmesh25;count=NFACE(gemmesh25);}n+=add_collect(out+n,f,count,g[0],g[1]-16,g[2],sn,cs);}
+ if(health<=0)return n;
+ sn=sine[p->heading];cs=sine[(p->heading+16)&63];int body=n;n+=add_collect(out+n,sparxbody,NFACE(sparxbody),c->sx,c->sy,c->sz,sn,cs);if(health<3)for(int i=body;i<n;i++){u32 col=out[i].color;int r=col&255,g=(col>>8)&255,b=(col>>16)&255;if(r>g&&g>2*b)out[i].color=health==2?((u32)r<<16)|((u32)g<<8)|b:((u32)b<<16)|((u32)r<<8)|g/3;}int phase=(c->tick/2)&3;const CollectFace*w=phase==1?sparxwing1:phase==3?sparxwing2:sparxwing0;int count=phase==1?NFACE(sparxwing1):phase==3?NFACE(sparxwing2):NFACE(sparxwing0);return n+add_collect(out+n,w,count,c->sx,c->sy,c->sz,sn,cs);}
+/* Triangle toggles the legacy fire diagnostics. No artificial targets by default. */
+static void diagnostic12(Breath*b,int*enabled,int btn,int prev){if(btn&PAD_START)*enabled=0;else if((btn&PAD_TRIANGLE)&&!(prev&PAD_TRIANGLE)){*enabled=!*enabled;if(*enabled)breath_reset(b);}if(!*enabled)for(int i=0;i<FIRE_TARGETS;i++)b->target[i].hp=0;}

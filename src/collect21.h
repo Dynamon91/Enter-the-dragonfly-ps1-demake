@@ -1,0 +1,12 @@
+/* Streamed gem identity persists independently of sector slots. */
+#include "gemids20.h"
+#define GEM20_COUNT 290
+typedef struct {U8 taken[GEM20_COUNT];int score,tick,sx,sy,sz,target,events,assist;} Collect20;
+static int gemid20(U32 id){int lo=0,hi=GEM20_COUNT;while(lo<hi){int mid=(lo+hi)/2;if(gemids20[mid]<id)lo=mid+1;else hi=mid;}return lo<GEM20_COUNT&&gemids20[lo]==id?lo:-1;}
+static void collectreset20(Collect20*c,int x,int y,int z){for(int i=0;i<GEM20_COUNT;i++)c->taken[i]=0;c->score=c->tick=c->events=c->assist=0;c->target=-1;c->sx=x-120;c->sy=y-190;c->sz=z-45;}
+static int path20(const Cache18*c,int x,int y,int z,int gx,int gy,int gz,int radius){int dx=gx-x,dz=gz-z;if(abs18(dx)>radius||abs18(dz)>radius||abs18(gy-y)>125||dx*dx+dz*dz>radius*radius)return 0;int prev=cache18_floor(c,x,z,y,110);if(prev==NONE18||abs18(prev-gy)>110)return 0;for(int k=1;k<=4;k++){int f=cache18_floor(c,x+dx*k/4,z+dz*k/4,prev,110);if(f==NONE18||abs18(f-gy)>110)return 0;prev=f;}return 1;}
+static void take20(Collect20*c,int id,int value,int assist){if(id<0||id>=GEM20_COUNT||c->taken[id]||value!=gemvalues20[id])return;c->taken[id]=1;c->score+=value;c->events++;c->assist+=assist;}
+static void collectstep21(Collect20*c,const Cache18*cache,int x,int y,int z,int heading,const short*sine,int health){c->events=c->assist=0;c->tick=(c->tick+1)&255;int best=-1,dist=361*361,tx=0,ty=0,tz=0;
+ for(int j=0;j<cache->count;j++){int k=cache->active[j];const U32*m=cache->meta[k];const U8*t=cache->bytes[k]+64+m[1]*36+m[2]*24;for(U32 i=0;i<m[3];i++,t+=16){if(s18(t+6)!=1)continue;int id=gemid20(rd18(t+12)),value=s18(t+8);if(id<0||c->taken[id]||value!=gemvalues20[id])continue;int gx=s18(t)+(int)m[4],gy=s18(t+2)+(int)m[5],gz=s18(t+4)+(int)m[6];if(path20(cache,x,y,z,gx,gy,gz,180)){take20(c,id,value,0);continue;}if(health&&path20(cache,x,y,z,gx,gy,gz,360)){int dx=gx-x,dz=gz-z,d=dx*dx+dz*dz;if(d<dist||(d==dist&&id<best)){best=id;dist=d;tx=gx;ty=gy-36;tz=gz;}}}}
+ c->target=best;int sn=sine[heading&63],cs=sine[(heading+16)&63];if(best<0){tx=x-((cs*135+sn*55)>>12);tz=z+((sn*135-cs*55)>>12);ty=y-190+(sine[(c->tick*2)&63]*18>>12);}if(abs18(c->sx-x)>700||abs18(c->sy-y)>700||abs18(c->sz-z)>700){c->sx=x-120;c->sy=y-190;c->sz=z-45;}else{c->sx+=(tx-c->sx)/4;c->sy+=(ty-c->sy)/4;c->sz+=(tz-c->sz)/4;}
+ if(best>=0&&abs18(tx-c->sx)<=26&&abs18(ty-c->sy)<=26&&abs18(tz-c->sz)<=26){take20(c,best,gemvalues20[best],1);c->target=-1;}}

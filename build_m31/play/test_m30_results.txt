@@ -1,0 +1,11 @@
+test_compression_native_c (test_m30.M30.test_compression_native_c) ... ok
+test_disc (test_m30.M30.test_disc) ... ok
+test_mesh_and_rig (test_m30.M30.test_mesh_and_rig) ... ok
+test_source_curves (test_m30.M30.test_source_curves) ... ok
+test_unchanged_assets (test_m30.M30.test_unchanged_assets) ... ok
+test_vram (test_m30.M30.test_vram) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 3.650s
+
+OK

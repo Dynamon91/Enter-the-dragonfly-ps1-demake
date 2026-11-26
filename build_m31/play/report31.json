@@ -1,0 +1,6 @@
+{
+  "exe_bytes": 591872,
+  "linked_ram_from_load": 1856992,
+  "headroom_to_stack_region": 43552,
+  "mode": "Native compilation; source-textured idle, ready, jump and defeat; reconstructed AI"
+}
