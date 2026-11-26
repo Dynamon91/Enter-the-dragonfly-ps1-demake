@@ -1,0 +1,47 @@
+{
+  "spyro": {
+    "vertices": 114,
+    "triangles": 142,
+    "sha256": "66632ea9ad9c480532e4130bff9f30caea854a5d38c077ee010eb3c815d54eea"
+  },
+  "crush": {
+    "vertices": 96,
+    "triangles": 144,
+    "sha256": "0cb38da3036e5194ec14de72683f74070dadde7ba50a4cf6ac88d86d60a1b816"
+  },
+  "gulp": {
+    "vertices": 96,
+    "triangles": 144,
+    "sha256": "932c34843b019c2fe491044db559d53bfbff8d541e15076a6ee49c5d67390437"
+  },
+  "ripto": {
+    "vertices": 91,
+    "triangles": 133,
+    "sha256": "af54789853d6697486034c3455b21dd628e894e07edb424dd3cb1a02a89c0428"
+  },
+  "gnasty": {
+    "vertices": 96,
+    "triangles": 144,
+    "sha256": "3d7784329be63b7c22321a0636249c67844e091b946131dfab7c5aef107e2e54"
+  },
+  "dragonfly": {
+    "vertices": 20,
+    "triangles": 16,
+    "sha256": "dea2c74b02cb747863cb1cada2c40031f5dfa2a63147a2d1e31e1233c07a3ea6"
+  },
+  "tree": {
+    "vertices": 24,
+    "triangles": 36,
+    "sha256": "e1e1cfe36a0fc6d41f008fa71d4bc0c2c430a5b020e091ad1a94ae35ca4fa176"
+  },
+  "crystal": {
+    "vertices": 24,
+    "triangles": 36,
+    "sha256": "f82cc3094a263f0b1de95de2cd36ebdc0ee5e6fe476c0869c757c2b91bca2d91"
+  },
+  "portal": {
+    "vertices": 36,
+    "triangles": 50,
+    "sha256": "cd4bf5d8855584e8960a2bc3c76ec7a2b7e8dca58ca1ebd74d1083ded47fca42"
+  }
+}
