@@ -1,0 +1,9 @@
+#ifndef XA47_VIEW_H
+#define XA47_VIEW_H
+/* Shared native/host diagnostic screen. Colors in PS1 BGR order. */
+typedef void (*Rect47)(int,int,int,int,unsigned);
+static const unsigned short glyph47[]={0x7b6f,0x2492,0x73e7,0x73cf,0x5bc9,0x79cf,0x79ef,0x7249,0x7bef,0x7bcf,0x2bed,0x6bae,0x7927,0x6b6e,0x79e7,0x79e4,0x796f,0x5bed,0x7497,0x126e,0x5bad,0x4927,0x5fed,0x5f6d,0x7b6f,0x7be4,0x7b7b,0x7bad,0x79cf,0x7492,0x5b6f,0x5b6a,0x5bfd,0x5aad,0x5a92,0x72a7};
+static void label47(Rect47 r,int x,int y,const char*s,unsigned c){for(;*s;s++,x+=8){int n=*s>='0'&&*s<='9'?*s-'0':*s>='A'&&*s<='Z'?*s-'A'+10:-1;if(n>=0)for(int i=0;i<15;i++)if(glyph47[n]&(1u<<(14-i)))r(x+2*(i%3),y+2*(i/3),2,2,c);}}
+static void number47(Rect47 r,int x,int y,unsigned n){char s[7];s[6]=0;for(int i=5;i>=0;i--){s[i]='0'+n%10;n/=10;}label47(r,x,y,s,0xffffff);}
+static void screen47(Rect47 r,const Player47*p,int selected){unsigned c=p->state==XA47_FAULT?0x5050ef:p->state==XA47_PLAY?0x70ce83:0x99a3ad;r(0,0,320,240,0x251c18);r(0,0,320,36,0x49372c);label47(r,12,8,"ETD 047   XA AUDIO LAB",0xffffff);label47(r,12,22,"DIAGNOSTIC TONES ONLY",0xc5bcb2);label47(r,12,52,"CHANNEL",0xffffff);label47(r,96,52,selected?"02":"01",0x70ce83);r(12,72,296,23,0x49372c);label47(r,22,78,p->state==XA47_FAULT?"TRANSPORT FAULT":p->state==XA47_PLAY?"PLAYING":"STOPPED",c);label47(r,12,110,"DISC LBA",0xc5bcb2);number47(r,152,110,p->pos);label47(r,12,130,"LOOPS",0xc5bcb2);number47(r,152,130,p->loops);r(12,153,296,12,0x49372c);if(p->state==XA47_PLAY&&p->track.last>=p->track.first){unsigned d=p->track.last-p->track.first+8,n=p->pos>=p->track.first?p->pos-p->track.first:0;if(n>d)n=d;if(n)r(12,153,296*n/d,12,c);}label47(r,12,184,"X PLAY   CIRCLE STOP",0xffffff);label47(r,12,201,"TRIANGLE CHANGE TRACK",0xffffff);label47(r,12,218,"NO ORIGINAL AUDIO LOADED",0xc5bcb2);}
+#endif
