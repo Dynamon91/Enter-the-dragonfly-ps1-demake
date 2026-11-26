@@ -1,0 +1,566 @@
+{
+  "schema": 1,
+  "note": "Required minimum inventory, not a claim of assets recovered. Local filenames/hashes/reviews intentionally blank until source files available. IDs correspond to campaign33.json.",
+  "assets": [
+    {
+      "id": "scene.level.00",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.level.00",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.level.01",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.level.01",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.level.02",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.level.02",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.level.03",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.level.03",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.level.04",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.level.04",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.level.05",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.level.05",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.level.06",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.level.06",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.level.07",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.level.07",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.level.08",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.level.08",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.level.09",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.09",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.10",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.10",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.11",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.11",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.12",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.12",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.13",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.13",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.14",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.14",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.15",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.15",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.16",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.16",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.17",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.17",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.18",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.18",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.19",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.19",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.20",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.20",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.21",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.21",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.22",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.22",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.23",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.23",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.24",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.24",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.25",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.25",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.26",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.26",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.27",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.27",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.28",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.28",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.level.29",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.level.29",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.boss.crush",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.boss.crush",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.boss.gulp",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.boss.gulp",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.boss.ripto",
+      "kind": "scene",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "music.boss.ripto",
+      "kind": "music",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "scene.boss.gnasty",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.boss.gnasty",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "scene.boss.alliance",
+      "kind": "scene",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "music.boss.alliance",
+      "kind": "music",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "model.spyro",
+      "kind": "model",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "model.sparx",
+      "kind": "model",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "model.dragonfly",
+      "kind": "model",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "model.ripto",
+      "kind": "model",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "model.npc_bank",
+      "kind": "model",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "model.enemy_bank",
+      "kind": "model",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    },
+    {
+      "id": "model.crush",
+      "kind": "model",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "model.gulp",
+      "kind": "model",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "model.gnasty",
+      "kind": "model",
+      "scope": "expanded",
+      "status": "missing",
+      "source": null
+    },
+    {
+      "id": "sfx.retail_bank",
+      "kind": "sfx",
+      "scope": "released",
+      "status": "missing",
+      "source": "etd_retail"
+    }
+  ]
+}
