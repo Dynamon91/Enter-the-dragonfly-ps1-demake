@@ -21,7 +21,7 @@ def build(cnk,out):
         if h not in ORDER:continue
         for pp,nn,qq in nodes(meta,0xdad78930):
             if u32(meta,pp+4)!=t:continue
-            m=re.search(rb'[0-9A-F]{8}\.PXT',meta[qq:qq+150])
+            m=re.search(rb'[0-9A-F]{8}\.PXT',meta[qq:qq+150]);
             if not m or qq+m.end()+10>len(meta):continue
             fn=m.group().decode();w,hh,_,s=struct.unpack_from('<HHHI',meta,qq+m.end());e=reg.get(fold(fn.lower().encode()))
             if e and e['size']==s and e['dimensions']==[w,hh] and e['palette'] in (16,256):refs.setdefault(h,set()).add((e['group'],fn))
