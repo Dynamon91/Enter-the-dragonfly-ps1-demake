@@ -6,6 +6,10 @@
 
 Unofficial fan development project targeting the original PlayStation (MIPS R3000A, GTE, 2 MiB main RAM, 1 MiB VRAM, 512 KiB SPU RAM). Classic Mode aims to reconstruct the released adventure; Expanded Mode explores the originally ambitious vision with separately labeled new designs.
 
+## Current priority — Classic adventure first (v0.50)
+
+Expanded content is deferred until the original adventure is complete. The original v0.37 hub/Dojo build remains the baseline; v0.38–0.49 workprint labs are separate diagnostics. The new generic terrain recovery tool is ready for real-source validation when the original PS2 ISO or full v0.37 archive is recovered. See [Classic v0.50 technical notes](milestones/v0.50/TECHNICAL.md).
+
 ## v0.37 — Lossless animation optimization
 
 ![v0.37 decoded character poses and memory comparison](docs/screenshots/v0.37.png)
