@@ -1,18 +1,18 @@
-# Classic demake completion — v0.74
+# Classic demake completion — v0.75
 
-**50% estimated complete / 50% remaining.** Scope: the released original adventure, all 90 dragonflies, Dragon Realms, eight released adventure levels and Ripto's arena. Expanded Mode is excluded. This is a subjective engineering estimate with an explicit weighted rubric, not a measured fraction of code, assets, or elapsed time. Source availability is tracked independently and earns no level-conversion credit by itself. Host tests are not emulator/hardware verification.
+**51% estimated complete / 49% remaining.** Scope: the released original adventure, all 90 dragonflies, Dragon Realms, eight released adventure levels and Ripto's arena. Expanded Mode is excluded. This is a subjective engineering estimate with an explicit weighted rubric, not a measured fraction of code, assets, or elapsed time. Source availability is tracked independently and earns no level-conversion credit by itself. Host tests are not emulator/hardware verification.
 
 | Category | Weight | Estimated completion | Weighted points |
 |---|---:|---:|---:|
-| Core PS1 engine | 25% | 75.5% | 18.875 |
-| Original locations and quests | 55% | 46% | 25.30 |
+| Core PS1 engine | 25% | 76% | 19.00 |
+| Original locations and quests | 55% | 48% | 26.40 |
 | Audio, menus and presentation | 10% | 35% | 3.50 |
 | Testing and release readiness | 10% | 20% | 2.00 |
-| Total | 100% | | 49.675 (rounds to 50%) |
+| Total | 100% | | 50.90 (rounds to 51%) |
 
 ## Evidence and scoring
 
-Core: equal-weight estimates for native compiler/disc packaging (100), terrain streaming (90), textured graphics (85), movement and input (90), collision (80), camera (70), actor animation (60), combat and breath abilities (60), scene transitions (70), progression/save support (50). Average 75.5%. Ten native overlays share a resident selector and RAM session ledger; eight source-position adventure routes and return arrivals implemented using count thresholds. Actual portal actors, full unlock scripts, memory-card saves and native emulator verification are outstanding.
+Core: equal-weight estimates for native compiler/disc packaging (100), terrain streaming (90), textured graphics (85), movement and input (90), collision (80), camera (70), actor animation (60), combat and breath abilities (65), scene transitions (70), progression/save support (50). Average 76%. Ten native overlays share a resident selector and RAM session ledger; eight source-position adventure routes and return arrivals implemented using count thresholds. Actual portal actors, full unlock scripts, memory-card saves and native emulator verification are outstanding.
 
 Location milestones: 0 = source only; 20 = converted static bank; 40 = native traversal prototype; 60 = subset of quest mechanics implemented; 80 = full original gameplay integrated; 100 = fidelity and continuous playthrough verified. The older hub and Dojo prototypes are credited at their highest evidenced stage, not claimed as part of the latest standalone CCC disc.
 
@@ -27,9 +27,9 @@ Location milestones: 0 = source only; 20 = converted static bank; 40 = native tr
 | Honey Marsh | 40% | v0.71 standalone source-derived traversal; material restoration, measured pool, movement/jump/cache host tests |
 | Thieves Den | 40% | v0.71 standalone source-derived traversal; material restoration, measured pool, movement/jump/cache host tests |
 | Jurassic Jungle | 40% | v0.71 standalone source-derived traversal; material restoration, measured pool, movement/jump/cache host tests |
-| Ripto arena | 40% | v0.71 source-derived arena traversal, original spawn and host movement; no boss fight |
+| Ripto arena | 60% | v0.75 three-form combat prototype, source vulnerability classes, actual native attacks and defeat host-tested |
 
-Equal-weight location average 46%. Original source location containers 10/10, native source-derived location prototypes 10/10 historically, fully verified continuous original locations 0/10. A per-world session ledger for implemented collectibles is integrated; the full original 90-dragonfly ledger and all minigames remain outstanding. CCC's six tested identities do not mean six verified in a complete playthrough or all CCC challenges completed.
+Equal-weight location average 48%. Original source location containers 10/10, native source-derived location prototypes 10/10 historically, fully verified continuous original locations 0/10. A per-world session ledger for implemented collectibles is integrated; the full original 90-dragonfly ledger and all minigames remain outstanding. CCC's six tested identities do not mean six verified in a complete playthrough or all CCC challenges completed.
 
 Presentation: equal estimates for original music (10), sound effects (50), dialogue (50), menus and UI (30), average 35%. QA: host regression and reproducible-build coverage (80), actual emulator boot/play (0), real hardware testing (0), full campaign playthrough (0), average 20%.
 
@@ -49,3 +49,6 @@ Six original placed hub dragonflies now capture-tested, 15 implemented identitie
 
 ## v0.74 cross-world dragonfly progression
 Six additional worlds have source-model and flag-based bubble capture. 23 source placements, 20 new captures host-tested (Dojo 3, Cloud 9 5, Monkey Monastery 3, Honey Marsh 4, Thieves Den 4, Jurassic Jungle 1). Two missing collision floors, one explicit Jurassic Jungle gate 8:26 remains locked. Total 35/90 reward identities exercised across accumulated milestones; 38 identities represented including the three new blocked/locked ones. No original waypoint flight or continuous access proof; original puzzle/door behavior not replaced by fake flag unlocks. A 26-container read-only reward audit finds references to 86/90 candidate slots; flags 5:203, 6:201, 7:201 and 8:203 lack direct matching evidence and require deeper script/minigame analysis. Flag references are not proof of unique original rewards. No additional location stage credit or memory-card persistence.
+
+## v0.75 boss and flight integration
+Three original Ripto body forms, source shield health/vulnerabilities, reconstructed fight timings and attacks; full three-phase host victory. 14 source animation curve payloads (16632 keys), 24 unresolved; not integrated. All 13 source locator chains across six worlds decoded, 233 points; native flight controller two circuits per route tested. Interception tests catch 22/23 placed dragonflies in those worlds, including both previously floor-blocked identities at later points in their routes; one gate remains locked. 37/90 rewards exercised across current and earlier milestones; 38 represented. Source audit covers 26 containers, 533 actor definitions and 238 dialogue scripts, with 88 award branches including 27 minigame branches. No native minigame mechanics, new general enemy AI, or permanent saves added. No emulator executable available.
