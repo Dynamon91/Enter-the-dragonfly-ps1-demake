@@ -1,4 +1,4 @@
-# Classic demake completion — v0.67
+# Classic demake completion — v0.68
 
 **34% estimated complete / 66% remaining.** Scope: the released original adventure, all 90 dragonflies, Dragon Realms, eight released adventure levels and Ripto's arena. Expanded Mode is excluded. This is a subjective engineering estimate with an explicit weighted rubric, not a measured fraction of code, assets, or elapsed time. Source availability is tracked independently and earns no level-conversion credit by itself. Host tests are not emulator/hardware verification.
 
@@ -21,7 +21,7 @@ Location milestones: 0 = source only; 20 = converted static bank; 40 = native tr
 | Dragon Realms | 40% | Earlier native hub traversal |
 | Dragonfly Dojo | 60% | Earlier native terrain, quest/capture/dialogue prototype |
 | Crop Circle Country | 60% | v0.65 native traversal, six dragonfly identities, two transport rides and enemy/urn interactions exercised through host tests |
-| Luau Island | 40% | Native traversal plus recovered sky, water palettes and host-tested swimming; quests incomplete |
+| Luau Island | 40% | Native traversal, recovered sky and swimming; 35 urns, six vases, 18 underwater gem identities and three free dragonflies host-tested; major quests incomplete |
 | Cloud 9 | 0% | Source available |
 | Monkey Monastery | 0% | Source available |
 | Honey Marsh | 0% | Source available |
