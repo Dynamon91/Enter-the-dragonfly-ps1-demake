@@ -1,11 +1,11 @@
 {
-  "version": "classic-v0.68",
+  "version": "classic-v0.69",
   "scope": "released Classic 90-dragonfly adventure; excludes expansion",
   "categories": [
     {
       "name": "engine",
       "weight": 25,
-      "completion": 68.5
+      "completion": 69
     },
     {
       "name": "locations",
@@ -23,7 +23,7 @@
       "completion": 20
     }
   ],
-  "weighted_completion": 33.625,
+  "weighted_completion": 33.75,
   "rounded_completion": 34,
   "remaining_rounded": 66,
   "source_locations_available": 10,
