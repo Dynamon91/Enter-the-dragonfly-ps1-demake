@@ -1,0 +1,10 @@
+# Source kite quest diagnostic (M29 integration fork)
+
+The source and incremental native disc update are delivered in the project conversation. No changes to main or the unavailable v0.74 unified campaign.
+
+- Parsed all 101 source conversation records for branch/command inventory. Compiled three Dojo kite scripts (records 259, 982, 271) into 167 instructions and 13 flag keys, with 13,606 host UBSan assertions over six collection orders, eight arrival subsets, repeated dialogue, source shortcut and invalid PC.
+- Native diagnostic: L1+L2 opens/cycles NPC, L2 talk/advance, R1+L2 injects kite arrival, L1+R1 exits after conversation. 18 subtitle/name IDs regenerated locally; 14/15 speech IDs map to original audio. Line 467 remains unresolved. Camera and sound commands counted, not implemented. Visits semantics reconstructed. Reward guard is diagnostic only and never changes gameplay/save data. NPC placement, physical kites, breath puzzles and capture remain outstanding.
+- Decoded all 23 recent dialogue candidates (4,048,940 non-silent-clip PCM frames total); local review tool presents original subtitle alongside WAV for manual verification. Listening not performed; 205 unresolved mappings remain.
+- Seven cinematic descriptors recovered (five cutscenes and two credits configurations), six distinct scene asset names, 14 next/cancel destinations validated. No direct MPEG-header records found; in-engine scene rendering still pending.
+- Native linked RAM 1,891,632 bytes; 8,912 bytes before reserved stack. Per-pixel subtitle rendering cost unmeasured. 168,019 sector payloads, 263 independent EDC/ECC checks, 28 soundtrack hashes verified. Incremental update applied twice; all 16 ISO files byte-identical to fresh build, 33 rebase checks. Output SHA256 8f230f80ef6978aac4d7de91ad46c26a90566b7e78a9ea6d251f7a8158a22291.
+- No actual emulator or hardware execution; full campaign, original puzzle triggers, cinematic playback and outstanding dialogue remain incomplete. 50% prior estimate unchanged. No original audio or executable committed to GitHub.
