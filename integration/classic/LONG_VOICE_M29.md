@@ -1,0 +1,8 @@
+# Native long dialogue integration (recovered M29 fork)
+
+- 166 of 168 oversized voice/effect assets passed source predictor-zero split audit: 631 supported chunks and 1,582,702 original ADPCM blocks, 4,789,317 host checks. Two unsupported IDs: 288 plat01r.wav and 1114 introSFX. No fabricated replacement.
+- Two 48 KiB SPU slots reuse existing 96 KiB dialogue allocation and shared CD staging buffer. Queue simulation: 644,403 assertions over 10,000 runs. Original compressed sample bytes preserved; per-chunk end flags adapted. No claim of gapless real playback.
+- All 400 exact unique English dialogue matches now supported (287 resident and 113 streaming); 212 missing names, 16 ambiguous, 444 unvoiced. Dialogue lookup 66,339 checks. Diagnostic L2 plays line 430; Triangle+L2 plays line 468. Music cue switch cancels voice.
+- Native MIPS-I build: 1,882,288 bytes RAM, 18,256 bytes before reserved stack; fresh 168,014-sector disc, all sector payloads, 263 independent ECC/EDC samples, 28 cue hashes verified.
+- Incremental update appends only boot executable to previous voice integration BIN. Verified twice; all 16 ISO files match fresh build; 34 rebasing checks. Target SHA256 0e6f4388e62c0727bbcb80bf017227a297cfa42ba49bfe0c1e2c552e796ac7bb. Source and update archives delivered in conversation. No original audio or binary committed to GitHub.
+- Actual emulator/console execution, remaining voice identification, original quest and portal triggers, cinematic playback, boss and minigames remain unverified or incomplete. Synchronous CD access may stall frames; ENDX polling can cause gaps. Latest v0.74 source still unavailable; main untouched. Overall estimate stays 50%.
