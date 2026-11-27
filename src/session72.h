@@ -11,7 +11,7 @@
 #define WORLD72_LIMIT 0x801e0000u
 typedef unsigned int U72;typedef unsigned char B72;
 typedef struct {U72 size,crc,gems,flies;B72 bytes[SLOT72_SIZE];} Slot72;
-typedef struct {U72 magic,world,base,sectors,visited;Slot72 slot[LEVEL72_COUNT];} Session72;
+typedef struct {U72 magic,world,base,sectors,visited;Slot72 slot[LEVEL72_COUNT];U72 requested,arrival;} Session72;
 #define SESSION72 ((Session72*)SESSION72_ADDR)
 static U72 crc72(const B72*p,U72 n){U72 c=~0u;while(n--){c^=*p++;for(int j=0;j<8;j++)c=(c>>1)^(0xedb88320u&-(c&1));}return ~c;}
 static void clear72(Session72*s){volatile B72*p=(volatile B72*)s;for(U72 i=0;i<sizeof *s;i++)p[i]=0;s->magic=SESSION72_MAGIC;}
