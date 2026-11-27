@@ -1,11 +1,11 @@
 {
-  "version": "classic-v0.71",
+  "version": "classic-v0.72",
   "scope": "released Classic 90-dragonfly adventure; excludes expansion",
   "categories": [
     {
       "name": "engine",
       "weight": 25,
-      "completion": 70
+      "completion": 72.5
     },
     {
       "name": "locations",
@@ -23,11 +23,13 @@
       "completion": 20
     }
   ],
-  "weighted_completion": 47.2,
-  "rounded_completion": 47,
-  "remaining_rounded": 53,
+  "weighted_completion": 47.825,
+  "rounded_completion": 48,
+  "remaining_rounded": 52,
   "source_locations_available": 10,
   "historical_native_location_prototypes": 10,
   "fully_verified_locations": 0,
-  "note": "Subjective weighted estimate; not hardware or full campaign verification."
+  "note": "Subjective weighted estimate; not hardware or full campaign verification.",
+  "unified_native_location_overlays": 10,
+  "original_portals_verified": 0
 }
