@@ -1,16 +1,16 @@
 {
-  "version": "classic-v0.74",
+  "version": "classic-v0.75",
   "scope": "released Classic 90-dragonfly adventure; excludes expansion",
   "categories": [
     {
       "name": "engine",
       "weight": 25,
-      "completion": 75.5
+      "completion": 76
     },
     {
       "name": "locations",
       "weight": 55,
-      "completion": 46
+      "completion": 48
     },
     {
       "name": "presentation",
@@ -23,9 +23,9 @@
       "completion": 20
     }
   ],
-  "weighted_completion": 49.675,
-  "rounded_completion": 50,
-  "remaining_rounded": 50,
+  "weighted_completion": 50.9,
+  "rounded_completion": 51,
+  "remaining_rounded": 49,
   "source_locations_available": 10,
   "historical_native_location_prototypes": 10,
   "fully_verified_locations": 0,
@@ -34,8 +34,13 @@
   "original_portals_verified": 0,
   "hub_travel_entries_host_tested": 8,
   "hub_return_arrivals_host_tested": 8,
-  "unified_capture_identities_implemented": 35,
+  "unified_capture_identities_implemented": 37,
   "unified_capture_identities_represented": 38,
-  "new_capture_tests_passed": 20,
-  "source_reward_candidate_slots_with_evidence": 86
+  "new_capture_tests_passed": 22,
+  "source_reward_candidate_slots_with_evidence": 86,
+  "source_flight_paths_integrated": 13,
+  "source_flight_locator_points": 233,
+  "boss_forms_host_tested": 3,
+  "source_actor_definitions_audited": 533,
+  "source_dialogue_scripts_audited": 238
 }
