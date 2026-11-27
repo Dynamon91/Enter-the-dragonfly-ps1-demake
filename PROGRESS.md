@@ -1,18 +1,18 @@
-# Classic demake completion — v0.73
+# Classic demake completion — v0.74
 
-**49% estimated complete / 51% remaining.** Scope: the released original adventure, all 90 dragonflies, Dragon Realms, eight released adventure levels and Ripto's arena. Expanded Mode is excluded. This is a subjective engineering estimate with an explicit weighted rubric, not a measured fraction of code, assets, or elapsed time. Source availability is tracked independently and earns no level-conversion credit by itself. Host tests are not emulator/hardware verification.
+**50% estimated complete / 50% remaining.** Scope: the released original adventure, all 90 dragonflies, Dragon Realms, eight released adventure levels and Ripto's arena. Expanded Mode is excluded. This is a subjective engineering estimate with an explicit weighted rubric, not a measured fraction of code, assets, or elapsed time. Source availability is tracked independently and earns no level-conversion credit by itself. Host tests are not emulator/hardware verification.
 
 | Category | Weight | Estimated completion | Weighted points |
 |---|---:|---:|---:|
-| Core PS1 engine | 25% | 74.5% | 18.625 |
+| Core PS1 engine | 25% | 75.5% | 18.875 |
 | Original locations and quests | 55% | 46% | 25.30 |
 | Audio, menus and presentation | 10% | 35% | 3.50 |
 | Testing and release readiness | 10% | 20% | 2.00 |
-| Total | 100% | | 49.425 (rounds to 49%) |
+| Total | 100% | | 49.675 (rounds to 50%) |
 
 ## Evidence and scoring
 
-Core: equal-weight estimates for native compiler/disc packaging (100), terrain streaming (90), textured graphics (85), movement and input (90), collision (80), camera (70), actor animation (60), combat and breath abilities (60), scene transitions (70), progression/save support (40). Average 74.5%. Ten native overlays share a resident selector and RAM session ledger; eight source-position adventure routes and return arrivals implemented using count thresholds. Actual portal actors, full unlock scripts, memory-card saves and native emulator verification are outstanding.
+Core: equal-weight estimates for native compiler/disc packaging (100), terrain streaming (90), textured graphics (85), movement and input (90), collision (80), camera (70), actor animation (60), combat and breath abilities (60), scene transitions (70), progression/save support (50). Average 75.5%. Ten native overlays share a resident selector and RAM session ledger; eight source-position adventure routes and return arrivals implemented using count thresholds. Actual portal actors, full unlock scripts, memory-card saves and native emulator verification are outstanding.
 
 Location milestones: 0 = source only; 20 = converted static bank; 40 = native traversal prototype; 60 = subset of quest mechanics implemented; 80 = full original gameplay integrated; 100 = fidelity and continuous playthrough verified. The older hub and Dojo prototypes are credited at their highest evidenced stage, not claimed as part of the latest standalone CCC disc.
 
@@ -46,3 +46,6 @@ All ten v0.71 disc prototypes are preserved as source-compatible virtual volumes
 
 ## v0.73 hub travel and shared progression
 Six original placed hub dragonflies now capture-tested, 15 implemented identities total across hub/CCC/Luau in unified disc. Original eight adventure entry thresholds and coordinates recovered; Triangle near each floor-validated entry requests travel if the current session count qualifies. Select+Start from a level returns to the source hub return position; original exit devices/animation not implemented. Boss flag 30, floor and unlock logic unresolved; developer selector remains accessible without gates. No continuous original playthrough, all 16 minigames and complete 90-identity progression remain incomplete. The new hub cache is sized for adjacent and spawn unions; 11,515 occupied anchors audited, maximum 47 texture groups. All ten snapshot and 100 switch tests pass.
+
+## v0.74 cross-world dragonfly progression
+Six additional worlds have source-model and flag-based bubble capture. 23 source placements, 20 new captures host-tested (Dojo 3, Cloud 9 5, Monkey Monastery 3, Honey Marsh 4, Thieves Den 4, Jurassic Jungle 1). Two missing collision floors, one explicit Jurassic Jungle gate 8:26 remains locked. Total 35/90 reward identities exercised across accumulated milestones; 38 identities represented including the three new blocked/locked ones. No original waypoint flight or continuous access proof; original puzzle/door behavior not replaced by fake flag unlocks. A 26-container read-only reward audit finds references to 86/90 candidate slots; flags 5:203, 6:201, 7:201 and 8:203 lack direct matching evidence and require deeper script/minigame analysis. Flag references are not proof of unique original rewards. No additional location stage credit or memory-card persistence.
