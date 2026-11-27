@@ -1,0 +1,9 @@
+# Physical Dojo quest integration (M29 fork)
+
+Recovered the four source models and three motion paths using the earlier v0.35 EDF and geometry associations. Four models, 2,004 vertices, 4,472 source triangles, 3,571 retained. Static bind poses and face colors sampled from original texture UV centroids; not the original textured/animated v0.35–v0.37 rendering.
+
+22 source spline points, original durations 6, 4.5 and 6.25 seconds (180/135/188 ticks). Native collision cache validated all six actor/trigger endpoints. Collision-qualified grounded trigger zones start motion; source arrival/return flags drive NPC dialogue and one shared session reward. 66,146 UBSan host assertions cover all six recovery orders and eight completion masks. Linear spline traversal, adapted trigger radius and player-facing yaw; source cutscene camera, exact animation, full reachability and physical reward capture unverified. No global save or memory-card writes.
+
+Moved the unchanged 52,608-byte legacy sound bank to LEGACYSFX.DAT, with FNV-1a validation during startup transfer. Main RAM reduced by 8,256 bytes despite new geometry; linked RAM 1,881,568 bytes, 18,976 bytes before reserved stack. Packet capacity remains 12,000. All 28 soundtrack hashes preserved. 168,781 fresh sector payloads validated; 263 independent EDC/ECC checks. Incremental update applied twice; all 19 ISO files equal fresh build; 59 rebase checks. Target SHA256 333e265eca78e7342225c9305e56fe854c6ece960ed9fe135bf407a1162a37d2.
+
+Source, local asset regeneration scripts and incremental disc update delivered in conversation. No original assets committed. Actual emulator/hardware execution unavailable. Latest v0.74 inaccessible, main unchanged. Full campaign estimate remains 50%; all outstanding worlds, minigames, quests, voice bindings, cinematic rendering and physical validation remain required.
