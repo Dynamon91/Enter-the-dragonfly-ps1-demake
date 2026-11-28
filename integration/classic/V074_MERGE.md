@@ -1,0 +1,7 @@
+# v0.74 unified campaign integration target
+
+User explicitly requests that v0.74 be modified too. Do not substitute the M29 executable or downgrade the integrated worlds. The exact spyro_etd_classic_v074_unified_source.zip is unavailable in the current workspace; native v0.74 integration is not complete.
+
+Additive integration kit delivered as etd_classic_v074_integration_kit.zip (SHA256 466f12162e74240e2654798e6eb9899f09839032102f6f58b0f2cfcb00a66720). New modules: source-mission keyed music routing (28/28 original cue mappings verified), seven source cinematic descriptors with render-acknowledged advancement, length-checked quest loading, two-copy CRC32 save journal for opaque native save payloads. All 26,949 host assertions passed under ASan/UBSan. Six C translation units compiled for MIPS-I; three synthetic staging tests passed. No actual v0.74 source, native build, emulator execution or memory-card I/O verified. Staging tool rejects unrelated archive names and unsafe paths, extracts to a new directory, and adds modules without replacing original files. Native scene, reward and storage callbacks must be bound to the actual unified engine. No invented mappings.
+
+Original field of view, terrain streaming visibility, cinematic rendering, remaining physical gameplay, 205 unresolved voice bindings and 23 provisional voice matches, physical save I/O and emulator testing remain required. Prior 50% estimate unchanged. Main branch not changed. No original audio or binary assets uploaded.
