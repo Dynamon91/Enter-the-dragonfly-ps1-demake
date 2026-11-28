@@ -1,0 +1,7 @@
+# Original Dojo quest camera integration (M29 fork)
+
+Recovered Snap Camera records 77, 1195 and 409; original NonInterruptible motion durations 6, 4.5 and 6.25 seconds. Q12 yaw/pitch coefficients generated from source position/target pairs. Existing 220 focal length retained. The native loop selects one grounded trigger at a time, locks player movement/combat/collectibles during the shot, continues audio streaming and returns to normal camera after setting the arrival flag. 503/503 projected path-root samples inside the frame; 31,323 host UBSan assertions passed including six completion orders, simultaneous trigger suppression and legacy camera arithmetic.
+
+Native MIPS-I compile/link: 1,872,688 bytes linked RAM, 27,856 bytes before stack. All 168,863 fresh sector payloads, 263 independent EDC/ECC checks, all 28 soundtrack hashes verified. Installer tested from previous kite-animation image; all 21 ISO files match the fresh build. 32 rebase checks. Target SHA256 5ac1d88c3c28c1a31a86a6bb3b1acf2ff166fd282edf3c0eef788d24d6b9e69d.
+
+Source and incremental update delivered in conversation. Original FOV, full mesh visibility, player-centered cache coverage and actual frame timing unverified; no emulator or hardware execution. Remaining campaign, cinematics, persistent saves and 205 unresolved voice mappings remain required. v0.74 unavailable and untouched; main unchanged. Prior 50% estimate unchanged.
