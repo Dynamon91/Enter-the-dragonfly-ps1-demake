@@ -1,0 +1,8 @@
+# Source kite animation and cumulative installer (M29 fork)
+
+- Recovered original k_idle and k_disappear clips (records 469 and 779; 232 keyframes, 66 curves). Twelve validated joint bind positions and weighted ribbon/string geometry. Eight idle pose samples, 472 vertices. Rigid tail sections follow head; independent rigid-tail rotations not implemented. Euler order and interpolation approximate. Arrival triggers one-shot source scale sequence with final reset key omitted; original event timing not authenticated.
+- Lossless axis-biased byte packing: 11,328 sample bytes plus six bias bytes, versus 22,656 bytes. 743,364 host UBSan assertions; inherited 66,146 quest-motion and 5,817,510 NPC animation assertions passed.
+- Three exact original camera position/target pairs recovered from source motion scripts; not executed by current yaw-only renderer.
+- MIPS-I link: 1,871,152 bytes RAM, 29,392 bytes before reserved stack. 168,862 fresh disc sectors, 263 independent EDC/ECC checks, all 28 music hashes and all 21 ISO files verified. Prior voices and terrain preserved.
+- Nine previous update stages replayed with exact SHA256 verification. Cumulative installer recognizes ten earlier hashes. Incremental from animated quest and cumulative from earliest and latest tested; all produced target SHA256 52f4142e7b0cbd0a6762726c7b2f34a739fcf645d3b02a0545254f97bb96278d. Input files untouched.
+- Source, incremental and cumulative update archives and host preview delivered in conversation. Original asset banks not committed. Emulator/physical execution not verified; all-world gameplay, actual cinematic rendering, persistent rewards, 205 voice mappings and v0.74 integration remain outstanding. No main change. Prior full-project estimate remains 50%.
